@@ -1,4 +1,5 @@
 module.exports = {
+  base: '/vue-examples',
   title: 'Vue Examples',
   lang: 'en-US',
   description: 'Examples of basic Vue components',
