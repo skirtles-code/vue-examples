@@ -1,0 +1,18 @@
+{
+  "name": "vue-examples",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "@vue/compiler-sfc": "^3.0.0",
+    "vitepress": "^0.17.3"
+  }
+}
