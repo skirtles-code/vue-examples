@@ -1,5 +1,5 @@
 import DefaultTheme from 'vitepress/theme'
-import LiveExample from '../../components/live-example.vue'
+import LiveExample from '../components/live-example.vue'
 
 export default {
   ...DefaultTheme,
