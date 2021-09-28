@@ -1,4 +1,3 @@
-<!-- accordion-panel.vue -->
 <template>
   <div class="accordion-panel" :class="{ expanded }">
     <div class="header" @click="toggle">{{ title }}</div>
@@ -46,9 +45,11 @@ onUnmounted(unregister)
   border: 1px solid #ccc;
   flex: auto;
   margin: 0 -1px -1px;
+  overflow: auto;
 }
 
 .expanded {
   flex: auto;
+  min-height: 0;
 }
 </style>

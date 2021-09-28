@@ -1,4 +1,3 @@
-<!-- tabs.vue -->
 <template>
   <div class="tabs">
     <div class="header">

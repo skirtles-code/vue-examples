@@ -1,4 +1,3 @@
-<!-- Usage -->
 <template>
   <basic-tabs>
     <basic-tab title="First">

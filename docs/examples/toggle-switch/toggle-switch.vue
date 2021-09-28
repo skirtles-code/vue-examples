@@ -9,7 +9,8 @@
 <script setup>
 const props = defineProps({
   modelValue: {
-    required: true
+    required: true,
+    type: Boolean
   }
 })
 

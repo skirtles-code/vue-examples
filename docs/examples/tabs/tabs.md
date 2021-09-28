@@ -5,13 +5,21 @@ import TabsExample from './example.vue'
 
 ## Tabs Example
 
+There are various ways to split a tabbed UI up into components. In this example we're going to use two components, an outer container called `tabs` and an inner container for each child called `tab`:
+
+<<< @/examples/tabs/example.vue
+
 <live-example>
   <tabs-example />
 </live-example>
 
-<<< @/examples/tabs/example.vue
+The `title` prop is used to pass the text to show on the button, with a slot for the content.
+
+The code for `tabs.vue` looks long, but a lot of it is CSS:
 
 <<< @/examples/tabs/tabs.vue
+
+`tab.vue` doesn't need much code:
 
 <<< @/examples/tabs/tab.vue
 

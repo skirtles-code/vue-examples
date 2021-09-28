@@ -8,7 +8,29 @@ const options = ['First', 'Second', 'Third']
 </script>
 # Radio
 
-## Radio with `<input>`
+## Radio Examples
+
+We're going to look at two examples of a radio component. The first example wraps a native `<input>` element to create the radio button. The second example uses CSS to give the impression of a radio button without using an `<input>`.
+
+In both cases the example usage is much the same:
+
+```vue
+<template>
+  <basic-radio v-model="radioValue" value="First" />
+  <basic-radio v-model="radioValue" value="Second" />
+  <basic-radio v-model="radioValue" value="Third" />
+  <pre>Bound value: {{ radioValue }}</pre>
+</template>
+
+<script setup>
+import { ref } from 'vue'
+import BasicRadio from './radio.vue'
+
+const radioValue = ref(true)
+</script>
+```
+
+### Radio with `<input>`
 
 <live-example>
   <template v-for="option in options">
@@ -19,7 +41,7 @@ const options = ['First', 'Second', 'Third']
 
 <<< @/examples/radio/radio.vue
 
-## Radio without `<input>`
+### Radio without `<input>`
 
 <live-example>
   <template v-for="option in options">

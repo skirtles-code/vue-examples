@@ -8,10 +8,29 @@ const switchValue = ref(true)
 
 ## Toggle Switch Example
 
+Using a toggle switch should be very similar to using a checkbox:
+
+```vue
+<template>
+  <basic-toggle-switch v-model="switchValue" />
+  <pre>Bound value: {{ switchValue }}</pre>
+</template>
+<script setup>
+import { ref } from 'vue'
+import BasicToggleSwitch from './toggle-switch.vue'
+
+const switchValue = ref(true)
+</script>
+```
+
+`v-model` is used to achieve a two-way data binding on the data value held in the parent.
+
 <live-example>
   <basic-toggle-switch v-model="switchValue" />
   <pre>Bound value: {{ switchValue }}</pre>
 </live-example>
+
+The implementation includes a lot of CSS, but it is otherwise very similar to a checkbox:
 
 <<< @/examples/toggle-switch/toggle-switch.vue
 

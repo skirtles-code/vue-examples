@@ -7,7 +7,29 @@ const checkboxValue = ref(true)
 </script>
 # Checkbox
 
-## Checkbox with `<input>`
+## Checkbox Examples
+
+We're going to look at two examples of a checkbox component. The first example wraps a native `<input>` element to create the checkbox. The second example uses CSS to give the impression of a checkbox without using an `<input>`.
+
+In both cases the example usage is much the same:
+
+```vue
+<template>
+  <basic-checkbox v-model="checkboxValue" />
+  <pre>Bound value: {{ checkboxValue }}</pre>
+</template>
+
+<script setup>
+import { ref } from 'vue'
+import BasicCheckbox from './checkbox.vue'
+
+const checkboxValue = ref(true)
+</script>
+```
+
+The important part is the two-way binding created using `v-model`.
+
+### Checkbox with `<input>`
 
 <live-example>
   <basic-checkbox v-model="checkboxValue" />
@@ -16,7 +38,7 @@ const checkboxValue = ref(true)
 
 <<< @/examples/checkbox/checkbox.vue
 
-## Checkbox without `<input>`
+### Checkbox without `<input>`
 
 <live-example>
   <basic-checkbox2 v-model="checkboxValue" />

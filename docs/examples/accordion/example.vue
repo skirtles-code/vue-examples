@@ -1,14 +1,16 @@
-<!-- Usage -->
 <template>
   <basic-accordion>
     <basic-accordion-panel title="First">
-      Some accordion content
+      First panel content
     </basic-accordion-panel>
     <basic-accordion-panel title="Second">
-      Some accordion content
+      <template v-for="i in 20">
+        Second panel content {{ i }}
+        <br v-if="i !== 20">
+      </template>
     </basic-accordion-panel>
     <basic-accordion-panel title="Third">
-      Some accordion content
+      Third panel content
     </basic-accordion-panel>
   </basic-accordion>
 </template>

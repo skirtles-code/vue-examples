@@ -1,4 +1,3 @@
-<!-- tab.vue -->
 <template>
   <div v-if="active" class="tab">
     <slot />

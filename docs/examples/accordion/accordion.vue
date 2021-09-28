@@ -1,4 +1,3 @@
-<!-- accordion.vue -->
 <template>
   <div class="accordion"><slot /></div>
 </template>
@@ -6,8 +5,10 @@
 <script setup>
 import { computed, provide, ref } from 'vue'
 
+// Holds the id of the currently expanded panel
 const expanded = ref(null)
 
+// Use `provide` to communicate with the child panels
 provide('accordion-register', () => {
   const id = Symbol()
 
@@ -33,6 +34,6 @@ provide('accordion-register', () => {
   display: flex;
   flex-direction: column;
   height: 300px;
-  width: 200px;
+  width: 240px;
 }
 </style>
