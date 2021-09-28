@@ -15,6 +15,7 @@ export default {
 fieldset {
   border: 1px solid #777;
   border-radius: 6px;
+  margin: 1rem 0;
   padding: 10px;
 }
 
