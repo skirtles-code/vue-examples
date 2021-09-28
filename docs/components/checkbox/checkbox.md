@@ -36,7 +36,7 @@ The important part is the two-way binding created using `v-model`.
   <pre>Bound value: {{ checkboxValue }}</pre>
 </live-example>
 
-<<< @/examples/checkbox/checkbox.vue
+<<< @/components/checkbox/checkbox.vue
 
 ### Checkbox without `<input>`
 
@@ -45,7 +45,7 @@ The important part is the two-way binding created using `v-model`.
   <pre>Bound value: {{ checkboxValue }}</pre>
 </live-example>
 
-<<< @/examples/checkbox/checkbox-without-input.vue
+<<< @/components/checkbox/checkbox-without-input.vue
 
 ## Vue Patterns
 
@@ -81,7 +81,7 @@ The wrapper `<div>` will receive any extra attributes specified on the parent, i
 
 ## Related Components
 
-An individual checkbox represents a choice between two values. This is effectively the same as a [Toggle Switch](/examples/toggle-switch/toggle-switch.html) (left/right) or a Toggle Button (pressed/unpressed).
+An individual checkbox represents a choice between two values. This is effectively the same as a [Toggle Switch](/components/toggle-switch/toggle-switch.html) (left/right) or a Toggle Button (pressed/unpressed).
 
 Multiple checkboxes can be used to model multiple selections, often represented using an `Array` or `Set` containing the selected values. This can also be represented using a list, like a `<select multiple>`. Some dropdowns also support multiple selections, often in combination with a tag/chip/pill component to show the selected values when the list is collapsed.
 

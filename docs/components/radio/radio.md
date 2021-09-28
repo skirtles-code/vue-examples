@@ -39,7 +39,7 @@ const radioValue = ref(true)
   <pre>Bound value: {{ radioValue }}</pre>
 </live-example>
 
-<<< @/examples/radio/radio.vue
+<<< @/components/radio/radio.vue
 
 ### Radio without `<input>`
 
@@ -50,7 +50,7 @@ const radioValue = ref(true)
   <pre>Bound value: {{ radioValue }}</pre>
 </live-example>
 
-<<< @/examples/radio/radio-without-input.vue
+<<< @/components/radio/radio-without-input.vue
 
 <!--
 ## Vue Patterns

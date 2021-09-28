@@ -9,7 +9,7 @@ The accordion presented here is made up of two components. There is an outer `ac
 
 Usage might look something like this:
 
-<<< @/examples/accordion/example.vue
+<<< @/components/accordion/example.vue
 
 While the 3 children given in this example are static, they could also be created dynamically using `v-for` over a suitable array.
 
@@ -21,11 +21,11 @@ Running this example we get:
 
 The code for `accordion.vue`:
 
-<<< @/examples/accordion/accordion.vue
+<<< @/components/accordion/accordion.vue
 
 The corresponding `accordion-panel.vue` is:
 
-<<< @/examples/accordion/accordion-panel.vue
+<<< @/components/accordion/accordion-panel.vue
 
 <!--
 ## Vue Patterns

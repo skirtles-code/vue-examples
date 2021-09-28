@@ -32,7 +32,7 @@ const switchValue = ref(true)
 
 The implementation includes a lot of CSS, but it is otherwise very similar to a checkbox:
 
-<<< @/examples/toggle-switch/toggle-switch.vue
+<<< @/components/toggle-switch/toggle-switch.vue
 
 <!--
 ## Vue Patterns

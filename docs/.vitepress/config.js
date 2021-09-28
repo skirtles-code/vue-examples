@@ -14,20 +14,20 @@ module.exports = {
           text: 'Introduction',
           link: '/'
         }, {
-          text: 'Examples',
+          text: 'Example Components',
           children: [
             {
               text: 'Form Components',
               children: [
                 {
                   text: 'Checkbox',
-                  link: '/examples/checkbox/checkbox.html',
+                  link: '/components/checkbox/checkbox.html',
                 }, {
                   text: 'Radio',
-                  link: '/examples/radio/radio.html',
+                  link: '/components/radio/radio.html',
                 }, {
                   text: 'Toggle Switch',
-                  link: '/examples/toggle-switch/toggle-switch.html',
+                  link: '/components/toggle-switch/toggle-switch.html',
                 }
               ]
             }, {
@@ -35,10 +35,10 @@ module.exports = {
               children: [
                 {
                   text: 'Accordion',
-                  link: '/examples/accordion/accordion.html',
+                  link: '/components/accordion/accordion.html',
                 }, {
                   text: 'Tabs',
-                  link: '/examples/tabs/tabs.html',
+                  link: '/components/tabs/tabs.html',
                 }
               ]
             }
