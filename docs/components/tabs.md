@@ -1,5 +1,5 @@
 <script setup>
-import TabsExample from './example.vue'
+import TabsExample from './tabs/example.vue'
 </script>
 # Tabs
 

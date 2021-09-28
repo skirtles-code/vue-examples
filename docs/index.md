@@ -10,11 +10,11 @@ In pretty much all cases, the styling and accessibility of these components is n
 
 ## Examples
 
-* [Checkbox](/components/checkbox/checkbox.html)
-* [Radio](/components/radio/radio.html)
-* [Toggle Switch](/components/toggle-switch/toggle-switch.html)
-* [Accordion](/components/accordion/accordion.html)
-* [Tabs](/components/tabs/tabs.html)
+* [Checkbox](/components/checkbox.html)
+* [Radio](/components/radio.html)
+* [Toggle Switch](/components/toggle-switch.html)
+* [Accordion](/components/accordion.html)
+* [Tabs](/components/tabs.html)
 
 ## Component Libraries
 

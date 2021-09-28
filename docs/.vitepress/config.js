@@ -21,13 +21,13 @@ module.exports = {
               children: [
                 {
                   text: 'Checkbox',
-                  link: '/components/checkbox/checkbox.html',
+                  link: '/components/checkbox.html',
                 }, {
                   text: 'Radio',
-                  link: '/components/radio/radio.html',
+                  link: '/components/radio.html',
                 }, {
                   text: 'Toggle Switch',
-                  link: '/components/toggle-switch/toggle-switch.html',
+                  link: '/components/toggle-switch.html',
                 }
               ]
             }, {
@@ -35,10 +35,10 @@ module.exports = {
               children: [
                 {
                   text: 'Accordion',
-                  link: '/components/accordion/accordion.html',
+                  link: '/components/accordion.html',
                 }, {
                   text: 'Tabs',
-                  link: '/components/tabs/tabs.html',
+                  link: '/components/tabs.html',
                 }
               ]
             }

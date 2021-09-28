@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue'
-import BasicToggleSwitch from './toggle-switch.vue'
+import BasicToggleSwitch from './toggle-switch/toggle-switch.vue'
 
 const switchValue = ref(true)
 </script>

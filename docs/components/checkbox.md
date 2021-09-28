@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue'
-import BasicCheckbox from './checkbox.vue'
-import BasicCheckbox2 from './checkbox-without-input.vue'
+import BasicCheckbox from './checkbox/checkbox.vue'
+import BasicCheckbox2 from './checkbox/checkbox-without-input.vue'
 
 const checkboxValue = ref(true)
 </script>
@@ -81,7 +81,7 @@ The wrapper `<div>` will receive any extra attributes specified on the parent, i
 
 ## Related Components
 
-An individual checkbox represents a choice between two values. This is effectively the same as a [Toggle Switch](/components/toggle-switch/toggle-switch.html) (left/right) or a Toggle Button (pressed/unpressed).
+An individual checkbox represents a choice between two values. This is effectively the same as a [Toggle Switch](/components/toggle-switch.html) (left/right) or a Toggle Button (pressed/unpressed).
 
 Multiple checkboxes can be used to model multiple selections, often represented using an `Array` or `Set` containing the selected values. This can also be represented using a list, like a `<select multiple>`. Some dropdowns also support multiple selections, often in combination with a tag/chip/pill component to show the selected values when the list is collapsed.
 

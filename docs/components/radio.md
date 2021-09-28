@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue'
-import BasicRadio from './radio.vue'
-import BasicRadio2 from './radio-without-input.vue'
+import BasicRadio from './radio/radio.vue'
+import BasicRadio2 from './radio/radio-without-input.vue'
 
 const radioValue = ref('First')
 const options = ['First', 'Second', 'Third']

@@ -1,5 +1,5 @@
 <script setup>
-import AccordionExample from './example.vue'
+import AccordionExample from './accordion/example.vue'
 </script>
 # Accordion
 
