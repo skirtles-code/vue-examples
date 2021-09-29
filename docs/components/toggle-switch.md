@@ -38,9 +38,13 @@ The implementation includes a lot of CSS, but it is otherwise very similar to a 
 ## Vue Patterns
 
 ## Missing Functionality
+-->
 
 ## Related Components
--->
+
+An individual toggle switch represents a choice between two values. This is effectively the same as a [Checkbox](/components/checkbox.html) (checked/unchecked) or a Toggle Button (pressed/unpressed).
+
+Multiple toggle switches can be used to model multiple selections, often represented using an `Array` or `Set` containing the selected values. This can also be represented using a list, like a `<select multiple>`. Some dropdowns also support multiple selections, often in combination with a tag/chip/pill component to show the selected values when the list is collapsed.
 
 ## Libraries
 
