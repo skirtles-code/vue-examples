@@ -1,3 +1,6 @@
+---
+sidebarDepth: 4
+---
 <script setup>
 import { ref } from 'vue'
 import BasicCheckbox from './checkbox/checkbox.vue'
