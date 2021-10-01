@@ -1,6 +1,8 @@
 # Introduction
 
-This collection of components is intended as a learning aid for those who are new to Vue.
+> Thank you to those on the [Vue Land Discord](https://chat.vuejs.org/) and elsewhere who inspired these ideas.
+
+This collection of components and patterns is intended as a learning aid for those who are new to Vue.
 
 Their primary purpose is to illustrate how core Vue 3 features can be combined to create standard UI components. The techniques used are intended to demonstrate idiomatic Vue usage for these types of scenarios. These examples have very limited functionality and are not intended to be production-ready components.
 
@@ -8,7 +10,7 @@ As with all code, trade-offs have been made and alternative approaches may be be
 
 In pretty much all cases, the styling and accessibility of these components is nowhere near the standard that would be expected of a real component library. Most developers choose to use a third-party component library, not least to avoid having to tackle those problems themselves. Some libraries that are compatible with Vue 3 are listed at the bottom of this page.
 
-## Examples
+## Example components
 
 * [Checkbox](./components/checkbox.html)
 * [Radio](./components/radio.html)
@@ -16,7 +18,12 @@ In pretty much all cases, the styling and accessibility of these components is n
 * [Accordion](./components/accordion.html)
 * [Tabs](./components/tabs.html)
 
-## Component Libraries
+## Patterns
+
+* [Computed with v-model](./patterns/computed-v-model.html)
+* [Global Properties](./patterns/global-properties.html)
+
+## Component libraries
 
 These are some of the most widely used component libraries for Vue 3.
 

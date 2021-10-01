@@ -43,14 +43,17 @@ module.exports = {
               ]
             }
           ]
-        // }, {
-        //   text: 'Patterns',
-        //   children: [
-        //     {
-        //       text: 'Computed v-model',
-        //       link: '/patterns/computed-v-model.html'
-        //     }
-        //   ]
+        }, {
+          text: 'Patterns',
+          children: [
+            {
+              text: 'Computed with v-model',
+              link: '/patterns/computed-v-model.html'
+            }, {
+              text: 'Global Properties',
+              link: '/patterns/global-properties.html'
+            }
+          ]
         }
       ]
     }
