@@ -52,6 +52,9 @@ module.exports = {
             }, {
               text: 'Global Properties',
               link: '/patterns/global-properties.html'
+            }, {
+              text: 'Coupled Components with provide/inject',
+              link: '/patterns/coupled-components-with-provide-inject.html'
             }
           ]
         }
