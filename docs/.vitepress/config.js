@@ -26,6 +26,9 @@ module.exports = {
               text: 'Toggle Switch',
               link: '/components/toggle-switch.html',
             }, {
+              text: 'Radio Group',
+              link: '/components/radio-group.html'
+            }, {
               text: 'Accordion',
               link: '/components/accordion.html',
             }, {

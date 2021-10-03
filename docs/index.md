@@ -15,6 +15,7 @@ In pretty much all cases, the styling and accessibility of these components is n
 * [Checkbox](./components/checkbox.html)
 * [Radio](./components/radio.html)
 * [Toggle Switch](./components/toggle-switch.html)
+* [Radio Group](./components/radio-group.html)
 * [Accordion](./components/accordion.html)
 * [Tabs](./components/tabs.html)
 

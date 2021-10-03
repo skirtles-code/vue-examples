@@ -8,8 +8,9 @@ The term 'coupling' is often used as a criticism of a design, but there are many
 
 1. An [accordion](../components/accordion.html) is often implemented using a parent container and expandable child panels.
 2. A [tabs](../components/tabs.html) component may be broken down into several smaller components, e.g. for the tab buttons and the content containers. These all need to communicate to ensure the correct thing is showing at any given time.
-3. A map component will need to communicate with marker components.
-4. A table component may need to communicate with headers, rows and cells.
+3. A [radio group](../components/radio-group.html) or checkbox group, for communicating with the radio/checkbox children.
+4. A map component will need to communicate with marker components.
+5. A table component may need to communicate with headers, rows and cells.
 
 While it is often possible for these components to communicate using props and events, that only works if one of the components is directly responsible for creating the other. It doesn't work if the two components are both created by a common parent.
 
@@ -55,7 +56,7 @@ The usage pattern here is very similar to using a composable. The `register` fun
 
 For more complete examples of this pattern, see the [accordion](../components/accordion.html) and [tabs](../components/tabs.html) components.
 
-While this registration pattern can be useful, it isn't the only way to use `provide` and `inject` for communicating between tightly coupled components. Data and functions can be passed down to emulate props and events respectively.
+While this registration pattern can be useful, it isn't the only way to use `provide` and `inject` for communicating between tightly coupled components. Data and functions can be passed down to emulate props and events respectively. The [Radio Group example](../components/radio-group.html) does something similar.
 
 ## Alternatives
 
