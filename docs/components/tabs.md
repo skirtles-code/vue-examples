@@ -23,9 +23,11 @@ The code for `tabs.vue` looks long, but a lot of it is CSS:
 
 <<< @/components/tabs/tab.vue
 
-<!--
 ## Vue Patterns
 
+See [Coupled Components with `provide`/`inject`](../patterns/coupled-components-with-provide-inject.html)
+
+<!--
 ## Missing Functionality
 
 ## Related Components

@@ -27,9 +27,11 @@ The corresponding `accordion-panel.vue` is:
 
 <<< @/components/accordion/accordion-panel.vue
 
-<!--
 ## Vue Patterns
 
+See [Coupled Components with `provide`/`inject`](../patterns/coupled-components-with-provide-inject.html).
+
+<!--
 ## Missing Functionality
 
 ## Related Components
