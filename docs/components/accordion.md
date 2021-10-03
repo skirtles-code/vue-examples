@@ -40,6 +40,6 @@ The corresponding `accordion-panel.vue` is:
 Various libraries include an accordion component, or a component that can achieve a similar effect. These include:
 
 - Ant Design Vue - [Collapse](https://2x.antdv.com/components/collapse)
-- Element Plus - [Collapse](https://element-plus.org/#/en-US/component/collapse)
+- Element Plus - [Collapse](https://element-plus.org/en-US/component/collapse.html)
 - Quasar - [Expansion Item](https://quasar.dev/vue-components/expansion-item)
 - PrimeVue - [Accordion](https://primefaces.org/primevue/showcase/#/accordion)

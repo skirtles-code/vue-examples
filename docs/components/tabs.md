@@ -36,6 +36,6 @@ The code for `tabs.vue` looks long, but a lot of it is CSS:
 Various libraries include a tabs component, including:
 
 - Ant Design Vue - [Tabs](https://2x.antdv.com/components/tabs)
-- Element Plus - [Tabs](https://element-plus.org/#/en-US/component/tabs)
+- Element Plus - [Tabs](https://element-plus.org/en-US/component/tabs.html)
 - Quasar - [Tabs](https://quasar.dev/vue-components/tabs) and [Tab Panels](https://quasar.dev/vue-components/tab-panels)
 - PrimeVue - [TabView](https://primefaces.org/primevue/showcase/#/tabview)

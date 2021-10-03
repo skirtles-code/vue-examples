@@ -68,6 +68,6 @@ const radioValue = ref(true)
 Various libraries include a radio component, including:
 
 - Ant Design Vue - [Radio](https://2x.antdv.com/components/radio)
-- Element Plus - [Radio](https://element-plus.org/#/en-US/component/radio)
+- Element Plus - [Radio](https://element-plus.org/en-US/component/radio.html)
 - Quasar - [Radio](https://quasar.dev/vue-components/radio)
 - PrimeVue - [RadioButton](https://primefaces.org/primevue/showcase/#/radiobutton)

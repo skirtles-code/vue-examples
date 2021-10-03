@@ -51,6 +51,6 @@ Multiple toggle switches can be used to model multiple selections, often represe
 Various libraries include a toggle switch component, including:
 
 - Ant Design Vue - [Switch](https://2x.antdv.com/components/switch)
-- Element Plus - [Switch](https://element-plus.org/#/en-US/component/switch)
+- Element Plus - [Switch](https://element-plus.org/en-US/component/switch.html)
 - Quasar - [Toggle](https://quasar.dev/vue-components/toggle)
 - PrimeVue - [InputSwitch](https://primefaces.org/primevue/showcase/#/inputswitch)
