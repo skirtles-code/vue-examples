@@ -9,7 +9,7 @@ import BasicRadioGroup from './radio-group/radio-group.vue'
 const radioValue = ref('First')
 const options = ['First', 'Second', 'Third']
 </script>
-# Radio
+# Radio Group
 
 ## Radio Group Example
 
