@@ -23,6 +23,7 @@ In pretty much all cases, the styling and accessibility of these components is n
 
 * [Computed with v-model](./patterns/computed-v-model.html)
 * [Global Properties](./patterns/global-properties.html)
+* [Coupled Components with `provide`/`inject`](./patterns/coupled-components-with-provide-inject.html)
 
 ## Component libraries
 
