@@ -44,4 +44,6 @@ Various libraries include an accordion component, or a component that can achiev
 - Ant Design Vue - [Collapse](https://2x.antdv.com/components/collapse)
 - Element Plus - [Collapse](https://element-plus.org/en-US/component/collapse.html)
 - Quasar - [Expansion Item](https://quasar.dev/vue-components/expansion-item)
+- Headless UI - [Disclosure](https://headlessui.dev/vue/disclosure)
 - PrimeVue - [Accordion](https://primefaces.org/primevue/showcase/#/accordion)
+- Oruga - [Collapse](https://oruga.io/components/Collapse.html)

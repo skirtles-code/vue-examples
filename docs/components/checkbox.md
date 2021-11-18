@@ -96,6 +96,7 @@ Various libraries include a checkbox component, including:
 - Element Plus - [Checkbox](https://element-plus.org/en-US/component/checkbox.html)
 - Quasar - [Checkbox](https://quasar.dev/vue-components/checkbox)
 - PrimeVue - [Checkbox](https://primefaces.org/primevue/showcase/#/checkbox)
+- Oruga - [Checkbox](https://oruga.io/components/Checkbox.html)
 
 Proxying `v-model` using a `computed` is so common that it features in libraries of composables:
 
