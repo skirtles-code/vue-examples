@@ -2,7 +2,7 @@
 
 There are various ways for components to communicate in Vue. The `provide`/`inject` mechanism is one of them, and it's generally not well understood.
 
-It's common to hear `provide` and `inject` described as 'long range props' or 'dependency injection'. While those can be useful ways to think of them, a major use case is for communication between tightly coupled components.
+It's common to hear `provide` and `inject` described as 'long-range props' or 'dependency injection'. While those can be useful ways to think of them, a major use case is for communication between tightly coupled components.
 
 The term 'coupling' is often used as a criticism of a design, but there are many cases where tightly coupled components make sense. These are cases where a particular component needs to be a child (or deeper descendant) of another, specific component. A few examples:
 
@@ -78,4 +78,4 @@ For example:
 
 The `props` object is created by the `my-map` component and is passed to the `<slot>`. The consuming template shown above then passes that on to each `my-map-marker` using `v-bind`.
 
-For the maps example, this probably isn't the way to go. The extra hassle in the consuming template isn't worth it when the components are that tightly coupled. However, scoped slots tend to be preferable in cases where the components are tightly coupled, allowing the consuming component to decide which components should be tied together.
+For the maps example, this probably isn't the way to go. The extra hassle in the consuming template isn't worth it when the components are that tightly coupled. However, scoped slots tend to be preferable in cases where the components are not tightly coupled, allowing the consuming component to decide which components should be tied together.
