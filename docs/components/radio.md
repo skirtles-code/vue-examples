@@ -71,4 +71,5 @@ Various libraries include a radio component, including:
 - Element Plus - [Radio](https://element-plus.org/en-US/component/radio.html)
 - Quasar - [Radio](https://quasar.dev/vue-components/radio)
 - PrimeVue - [RadioButton](https://primefaces.org/primevue/showcase/#/radiobutton)
+- Naive UI - [Radio](https://www.naiveui.com/en-US/os-theme/components/radio)
 - Oruga - [Radio](https://oruga.io/components/Radio.html)

@@ -36,5 +36,6 @@ These are some of the most widely used component libraries for Vue 3.
 * [docs](https://quasar.dev/vue-components/) - [npm](https://www.npmjs.com/package/quasar) - Quasar 2
 * [docs](https://headlessui.dev/) - [npm](https://www.npmjs.com/package/@headlessui/vue) - Headless UI
 * [docs](https://primefaces.org/primevue/showcase/#/setup) - [npm](https://www.npmjs.com/package/primevue) - PrimeVue 3
-* [docs](https://oruga.io/documentation/) - [npm](https://www.npmjs.com/package/@oruga-ui/oruga-next) - Oruga UI
+* [docs](https://www.naiveui.com/en-US/os-theme/components/button) - [npm](https://www.npmjs.com/package/naive-ui) - Naive UI 2
+* [docs](https://oruga.io/documentation/) - [npm](https://www.npmjs.com/package/@oruga-ui/oruga-next) - Oruga UI (next)
 * [docs](https://next.vuetifyjs.com/en/introduction/why-vuetify/) - [npm](https://www.npmjs.com/package/vuetify) - Vuetify 3 (currently in alpha for Vue 3)

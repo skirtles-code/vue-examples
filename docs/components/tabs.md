@@ -42,4 +42,5 @@ Various libraries include a tabs component, including:
 - Quasar - [Tabs](https://quasar.dev/vue-components/tabs) and [Tab Panels](https://quasar.dev/vue-components/tab-panels)
 - Headless UI - [Tabs](https://headlessui.dev/vue/tabs)
 - PrimeVue - [TabView](https://primefaces.org/primevue/showcase/#/tabview)
+- Naive UI - [Tabs](https://www.naiveui.com/en-US/os-theme/components/tabs)
 - Oruga - [Tabs](https://oruga.io/components/Tabs.html)

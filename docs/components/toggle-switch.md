@@ -55,4 +55,5 @@ Various libraries include a toggle switch component, including:
 - Quasar - [Toggle](https://quasar.dev/vue-components/toggle)
 - Headless UI - [Switch](https://headlessui.dev/vue/switch)
 - PrimeVue - [InputSwitch](https://primefaces.org/primevue/showcase/#/inputswitch)
+- Naive UI - [Switch](https://www.naiveui.com/en-US/os-theme/components/switch)
 - Oruga - [Switch](https://oruga.io/components/Switch.html)

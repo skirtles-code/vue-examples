@@ -95,4 +95,5 @@ Various libraries include a radio component, including:
 - Element Plus - [Radio Group](https://element-plus.org/en-US/component/radio.html)
 - Quasar - [Option Group](https://quasar.dev/vue-components/option-group) (uses a prop-based approach for the options)
 - Headless UI - [Radio Group](https://headlessui.dev/vue/radio-group)
+- Naive UI - [Radio Group](https://www.naiveui.com/en-US/os-theme/components/radio)
 <!-- - PrimeVue - [RadioButton](https://primefaces.org/primevue/showcase/#/radiobutton) -->

@@ -46,4 +46,5 @@ Various libraries include an accordion component, or a component that can achiev
 - Quasar - [Expansion Item](https://quasar.dev/vue-components/expansion-item)
 - Headless UI - [Disclosure](https://headlessui.dev/vue/disclosure)
 - PrimeVue - [Accordion](https://primefaces.org/primevue/showcase/#/accordion)
+- Naive UI - [Collapse](https://www.naiveui.com/en-US/os-theme/components/collapse)
 - Oruga - [Collapse](https://oruga.io/components/Collapse.html)
