@@ -50,6 +50,14 @@ module.exports = {
               link: '/patterns/coupled-components-with-provide-inject.html'
             }
           ]
+        }, {
+          text: 'Advanced Guides',
+          children: [
+            {
+              text: 'Understanding the Vue Source Code',
+              link: '/advanced/understanding-the-vue-source-code.html'
+            }
+          ]
         }
       ]
     }
