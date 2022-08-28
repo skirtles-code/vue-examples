@@ -51,9 +51,12 @@ module.exports = {
             }
           ]
         }, {
-          text: 'Advanced Guides',
+          text: 'Guides',
           children: [
             {
+              text: 'Working with Image Assets',
+              link: '/guides/working-with-image-assets.html'
+            }, {
               text: 'Understanding the Vue Source Code',
               link: '/advanced/understanding-the-vue-source-code.html'
             }
