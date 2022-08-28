@@ -36,11 +36,11 @@ These are some of the most widely used component libraries for Vue 3.
 
 <!-- Ordered by npm downloads, except Vuetify -->
 
-* [docs](https://2x.antdv.com/components/overview/) - [npm](https://www.npmjs.com/package/ant-design-vue) - Ant Design Vue 2
-* [docs](https://element-plus.org/#/en-US/component) -  [npm](https://www.npmjs.com/package/element-plus) - Element Plus 1
-* [docs](https://quasar.dev/vue-components/) - [npm](https://www.npmjs.com/package/quasar) - Quasar 2
+* [docs](https://quasar.dev/vue-components/) - [npm](https://www.npmjs.com/package/quasar) - Quasar
+* [docs](https://element-plus.org/en-US/) -  [npm](https://www.npmjs.com/package/element-plus) - Element Plus
+* [docs](https://www.antdv.com/components/overview/) - [npm](https://www.npmjs.com/package/ant-design-vue) - Ant Design Vue
 * [docs](https://headlessui.dev/) - [npm](https://www.npmjs.com/package/@headlessui/vue) - Headless UI
-* [docs](https://primefaces.org/primevue/showcase/#/setup) - [npm](https://www.npmjs.com/package/primevue) - PrimeVue 3
-* [docs](https://www.naiveui.com/en-US/os-theme/components/button) - [npm](https://www.npmjs.com/package/naive-ui) - Naive UI 2
+* [docs](https://primefaces.org/primevue/setup) - [npm](https://www.npmjs.com/package/primevue) - PrimeVue
+* [docs](https://www.naiveui.com/) - [npm](https://www.npmjs.com/package/naive-ui) - Naive UI
 * [docs](https://oruga.io/documentation/) - [npm](https://www.npmjs.com/package/@oruga-ui/oruga-next) - Oruga UI (next)
-* [docs](https://next.vuetifyjs.com/en/introduction/why-vuetify/) - [npm](https://www.npmjs.com/package/vuetify) - Vuetify 3 (currently in alpha for Vue 3)
+* [docs](https://next.vuetifyjs.com/en/introduction/why-vuetify/) - [npm](https://www.npmjs.com/package/vuetify) - Vuetify 3 (currently in beta for Vue 3)
