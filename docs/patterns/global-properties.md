@@ -72,13 +72,12 @@ But the lack of availability in `setup` is a major problem, so let's consider so
 
 The standard solution for use with the Composition API is to use `provide` on the application and `inject` in `setup`. The latter will usually be wrapped in a dedicated helper function. We see this approach with Vuex and Vue Router, which have functions such as `useStore` and `useRouter` implemented this way.
 
-Continuing the earlier example for `axios`:
+Returning to the earlier example for `axios`:
 
 ```js
 const app = createApp({ /* ... */ })
 const http = axios.create({ /* ... */ })
 
-app.config.globalProperties.$http = http
 app.provide('http', http)
 ```
 
@@ -113,8 +112,11 @@ export const useHttp = () => inject(injectionKey)
 export const plugin = {
   install (app) {
     const http = axios.create({ /* ... */ })
-    app.config.globalProperties.$http = http
     app.provide(injectionKey, http)
+
+    // It is common to use both `app.config.globalProperties`
+    // and `provide` in the same plugin 
+    app.config.globalProperties.$http = http
   }
 }
 ```
@@ -148,7 +150,7 @@ This flips the dependency. Rather than having a value injected from outside, the
 
 ES modules also work well outside of Vue components. For the `axios` example, it's common to need the same `axios` instance in Vuex actions. While there are other ways that can be achieved, using an ES module is the most widely used in real applications.
 
-## Sharing state using Vuex or Pinia
+## Sharing state using Pinia or Vuex
 
 It can also be useful to share state globally. We could just use ES modules and Vue's Reactivity APIs to implement shared state ourselves:
 
@@ -158,7 +160,7 @@ export default reactive({})
 
 Then anything that needs this state object can use `import` to pull it in.
 
-However, this roll-your-own approach tends to lead to problems. Standard solutions, such as [Vuex](https://next.vuex.vuejs.org/) or [Pinia](https://pinia.esm.dev/), provide several benefits:
+However, this roll-your-own approach tends to lead to problems. Standard solutions, such as [Pinia](https://pinia.vuejs.org/) or [Vuex](https://vuex.vuejs.org/), provide several benefits:
 
 - Documented APIs.
 - Familiarity among developers.
@@ -166,7 +168,7 @@ However, this roll-your-own approach tends to lead to problems. Standard solutio
 - Integration with Vue Devtools.
 - You don't have to maintain the code yourself.
 
-So if you need a reactive, central store for your state, you should probably be using either Vuex or Pinia.
+So if you need a reactive, central store for your state, you should probably be using either Pinia or Vuex.
 
 ## Global mixins
 
@@ -258,7 +260,7 @@ We can add the `provide` call ourselves from within `main.js`, after the plugin 
 ```js
 // main.js
 import { createApp } from 'vue'
-import axiosPlugin from './axiosPlugins.js'
+import axiosPlugin from './axiosPlugin.js'
 
 const app = createApp({ /* ... */ })
 app.use(axiosPlugin)
