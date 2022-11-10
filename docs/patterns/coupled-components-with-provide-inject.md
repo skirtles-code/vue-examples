@@ -60,7 +60,7 @@ While this registration pattern can be useful, it isn't the only way to use `pro
 
 ## Alternatives
 
-Sometimes it's possible to implement this type of tight coupling using `render` functions and direct manipulation of the VNodes. That requires digging into the internals of Vue, which can lead to some unpleasant surprises if you aren't sure what you're doing.
+Sometimes it's possible to implement this type of tight coupling using `render` functions and direct manipulation of the VNodes. That requires digging into the internals of Vue, which can lead to some unpleasant surprises if you aren't sure what you're doing. I created a library called [`@skirtle/vue-vnode-utils`](https://skirtles-code.github.io/vue-vnode-utils/) that makes this kind of VNode manipulation a little easier. There's an [accordion example](https://skirtles-code.github.io/vue-vnode-utils/examples.html#adding-component-v-model) in that library's docs that is functionally very similar to the one mentioned above.
 
 Another alternative is to use scoped slots, though they require the consuming template to get involved.
 
