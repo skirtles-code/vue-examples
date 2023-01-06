@@ -39,6 +39,8 @@ The important part is the two-way binding created using `v-model`.
   <pre>Bound value: {{ checkboxValue }}</pre>
 </live-example>
 
+[SFC Playground](https://sfc.vuejs.org/#eNp9Ustu4zAM/BVBl7hAbN+NpMBmsfc97WXVg2MxrdroUUpyWxj+91Jy4rhpkZtIkcPhDAf+y7mqj8AbvvEdKheYhxDdvTBKO4uBDQzhwEZ2QKvZikpX89eu9ar7/QTdy96+nwqq+ks2YVODMJ01PrDulP7XHiOwbYIuAka4E2ZTT/NpMgUBtDu2AShibLNPkOW5mfWlthKOW8G/4AnO6qneIdzvbDSS9emjYcNwNXocN3WqSnPnWXzNp81K3brq2VtDsgwJUZw+vOAEljIpR7ulWPCnEJxv6tofurTws68sPtb0qjCaoDRU4HW5R/vmAQlY8PUCo6ZkD1giGAkIeAvzqvQbboIdhRlplW8+3PK4s9rFAPLK6LNvDq3z5JeEgzLwN0VFliEbkSWddUF4jQpBNiw5e1o0fDiq2Fl7hJZQJ5Lk+nkAaBVm/D8U+OL/KjpJtjSXGauHRUs2lBhvZ/ITpUcIrLi7sAkRzbRAdUHKFDI3koIVBt6yUiDnxsSo+IHCmi2KF5vcul+p+vygpzJENcuxOF+63KubBin41FtPzcszHT8BpylNbQ==)
+
 <<< @/components/checkbox/checkbox.vue
 
 ### Checkbox without `<input>`
@@ -47,6 +49,8 @@ The important part is the two-way binding created using `v-model`.
   <basic-checkbox2 v-model="checkboxValue" />
   <pre>Bound value: {{ checkboxValue }}</pre>
 </live-example>
+
+[SFC Playground](https://sfc.vuejs.org/#eNqFUsuO2zAM/BXWPcQBYjt9bNG4SdCm6L2nXuoeHIlxtLElVZKzSQP/eyk/8thd7MIwIFKj4QzJU/BN63hfY5AGc8uM0A4sulovMykqrYyDExjcQAMboyoYEXR0vlrlVrDvW2S7tTr0gDi5yXpuepBJpqR1wPr0r7ysERaeOnSmxnEm50lXnypT4LDSZe6QIoD52lNGw2PYR5XiWC6y4IYvCyDp8NrgcqVqyWHvL1I4nR6Vbpp54lG+7rlWMAk6Z1GV6/jeKkltOXnGrL+wWUBkPuNz5M3HWbB1Tts0SeyGecP3NlamSOgUm1o6UWGMtorWRj1YNEScBZMrjoSSezSRQcnRoHmJ8xH0Ca+nbTLZkJUnc3hmxt1UtFHa0jQ4boTEnz4KW5Ntm9uGnV0b/FsLgzwFP7fehjtqQqyUKjGn6XUSaKZDAayEO/P/oMCGv0e15tT09FJj9OfqiVNFUfoVCcewWHbVPU34zLsJvGktxJccMZGGl3aKi3176I7Aytxa2ijqFe1ROoT93ni/F3KyF8BXVgq2I0in9LJ8Scd8tVdtdeuO5McypZFTJvaL3LpaK0OzTOGdPoBVpeDwdjabfblcRSbnorYtok8fIiv+CVmkA4RS7dUWRbF1BP3UYx8Ed9tzTD2h0oOldI0bZfBWRi9hOmXXEnqaKX3vSSf9rymhMTqUJGU0amMuLHXjSLhSsd2N2LuercpNIWQKH/rYmVxaUlilYJSjTobRxzuOxfja2efBGA3bt3gZNP8BJF+soA==)
 
 <<< @/components/checkbox/checkbox-without-input.vue
 

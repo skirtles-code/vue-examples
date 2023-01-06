@@ -46,6 +46,8 @@ It would look something like this:
   </template>
 </live-example>
 
+[SFC Playground](https://sfc.vuejs.org/#eNqVU8tu2zAQ/BWCFymAJd0FJUADtD0VKNqil7IHR1w7NCySXVIqCkP/3iUpS/EDTnKyuTs7nB2ODvyDteXQA69541pU1jMHvrcPQqvOGvTswBA2bGQbNB3LCJrNrce1U+23tVRm6pbVUgqs16Cf0fT2Cj7WpyGhW6OdZxgaP9f7Hth9kJFnnxQ6n90J3VRJLgmlg4fO7tce6MRY8xRIizhcbON1Q9EZCft7wRdKwSP6FM+G0CJcvEhwVt0CfQfSKV9D/XhWuICa6kJeqluEh0fTa5kGa3Yg6xcDxrGpAiSsPq/LVzwZXHRrW+6c0fSQh0AnpoYTnJiSOsHJ3nAW/Nl76+qqcps2eL5zpcFtRf9K7LVXHZTguuIJzV8HSMSCr15wVFQcAAsELQEBb3GeQS94A+0o9EirnIbnViSV3kHrz1J5TI1FYx0FRsJGafgaTnl04Ohr2gThT68QZM08ki2TDIrWSfq+hNwQWboxz5biaymUajimQmnbe+b/2RCHyEBxOMtk5KRyfYxN/J1C2lSJ7fTpr3w8t0xrTUcyQK6CQ4OSlKn3+Rf1xjS+3UTolJ+5PtLB5b+y3kpaoV74st9xZNJ14vJq1p1EbMGz/G653/eok+Ry4YtCYmLJBZZHK+eZICm/omGVAkJKpi3e/sBub/z8fV8+1fgfM4nheA==)
+
 `radio-group.vue` would use `provide` to communicate with `radio.vue`:
 
 <<< @/components/radio-group/radio-group.vue
