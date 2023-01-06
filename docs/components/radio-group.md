@@ -30,7 +30,7 @@ import { ref } from 'vue'
 import BasicRadio from './radio.vue'
 import BasicRadioGroup from './radio-group.vue'
 
-const radioValue = ref(true)
+const radioValue = ref('First')
 </script>
 ```
 

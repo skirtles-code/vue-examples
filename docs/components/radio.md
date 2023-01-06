@@ -29,7 +29,7 @@ In both cases the example usage is much the same:
 import { ref } from 'vue'
 import BasicRadio from './radio.vue'
 
-const radioValue = ref(true)
+const radioValue = ref('First')
 </script>
 ```
 
