@@ -52,10 +52,11 @@ Multiple toggle switches can be used to model multiple selections, often represe
 
 Various libraries include a toggle switch component, including:
 
-- Ant Design Vue - [Switch](https://2x.antdv.com/components/switch)
+- Vuetify - [Switch](https://next.vuetifyjs.com/en/components/switches/)
 - Element Plus - [Switch](https://element-plus.org/en-US/component/switch.html)
 - Quasar - [Toggle](https://quasar.dev/vue-components/toggle)
+- Ant Design Vue - [Switch](https://www.antdv.com/components/switch)
 - Headless UI - [Switch](https://headlessui.dev/vue/switch)
-- PrimeVue - [InputSwitch](https://primefaces.org/primevue/showcase/#/inputswitch)
+- PrimeVue - [InputSwitch](https://primefaces.org/primevue/inputswitch)
 - Naive UI - [Switch](https://www.naiveui.com/en-US/os-theme/components/switch)
 - Oruga - [Switch](https://oruga.io/components/Switch.html)

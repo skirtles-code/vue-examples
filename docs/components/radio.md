@@ -71,9 +71,10 @@ const radioValue = ref('First')
 
 Various libraries include a radio component, including:
 
-- Ant Design Vue - [Radio](https://2x.antdv.com/components/radio)
+- Vuetify - [Radio](https://next.vuetifyjs.com/en/components/radio-buttons/)
 - Element Plus - [Radio](https://element-plus.org/en-US/component/radio.html)
 - Quasar - [Radio](https://quasar.dev/vue-components/radio)
-- PrimeVue - [RadioButton](https://primefaces.org/primevue/showcase/#/radiobutton)
+- Ant Design Vue - [Radio](https://www.antdv.com/components/radio)
+- PrimeVue - [RadioButton](https://primefaces.org/primevue/radiobutton)
 - Naive UI - [Radio](https://www.naiveui.com/en-US/os-theme/components/radio)
 - Oruga - [Radio](https://oruga.io/components/Radio.html)

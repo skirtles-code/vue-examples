@@ -96,10 +96,11 @@ Multiple checkboxes can be used to model multiple selections, often represented 
 
 Various libraries include a checkbox component, including:
 
-- Ant Design Vue - [Checkbox](https://2x.antdv.com/components/checkbox)
+- Vuetify - [Checkbox](https://next.vuetifyjs.com/en/components/checkboxes/)
 - Element Plus - [Checkbox](https://element-plus.org/en-US/component/checkbox.html)
 - Quasar - [Checkbox](https://quasar.dev/vue-components/checkbox)
-- PrimeVue - [Checkbox](https://primefaces.org/primevue/showcase/#/checkbox)
+- Ant Design Vue - [Checkbox](https://www.antdv.com/components/checkbox)
+- PrimeVue - [Checkbox](https://primefaces.org/primevue/checkbox)
 - Naive UI - [Checkbox](https://www.naiveui.com/en-US/os-theme/components/checkbox)
 - Oruga - [Checkbox](https://oruga.io/components/Checkbox.html)
 

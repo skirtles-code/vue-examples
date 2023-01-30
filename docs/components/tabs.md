@@ -39,10 +39,11 @@ See [Coupled Components with `provide`/`inject`](../patterns/coupled-components-
 
 Various libraries include a tabs component, including:
 
-- Ant Design Vue - [Tabs](https://2x.antdv.com/components/tabs)
+- Vuetify - [Tabs](https://next.vuetifyjs.com/en/components/tabs/)
 - Element Plus - [Tabs](https://element-plus.org/en-US/component/tabs.html)
 - Quasar - [Tabs](https://quasar.dev/vue-components/tabs) and [Tab Panels](https://quasar.dev/vue-components/tab-panels)
+- Ant Design Vue - [Tabs](https://www.antdv.com/components/tabs)
 - Headless UI - [Tabs](https://headlessui.dev/vue/tabs)
-- PrimeVue - [TabView](https://primefaces.org/primevue/showcase/#/tabview)
+- PrimeVue - [TabView](https://primefaces.org/primevue/tabview)
 - Naive UI - [Tabs](https://www.naiveui.com/en-US/os-theme/components/tabs)
 - Oruga - [Tabs](https://oruga.io/components/Tabs.html)

@@ -93,9 +93,10 @@ Both approaches could be implemented in the same component.
 
 Various libraries include a radio component, including:
 
-- Ant Design Vue - [Radio Group](https://2x.antdv.com/components/radio)
+- Vuetify - [Radio Group](https://next.vuetifyjs.com/en/components/radio-buttons/)
 - Element Plus - [Radio Group](https://element-plus.org/en-US/component/radio.html)
 - Quasar - [Option Group](https://quasar.dev/vue-components/option-group) (uses a prop-based approach for the options)
+- Ant Design Vue - [Radio Group](https://www.antdv.com/components/radio)
 - Headless UI - [Radio Group](https://headlessui.dev/vue/radio-group)
 - Naive UI - [Radio Group](https://www.naiveui.com/en-US/os-theme/components/radio)
 <!-- - PrimeVue - [RadioButton](https://primefaces.org/primevue/showcase/#/radiobutton) -->

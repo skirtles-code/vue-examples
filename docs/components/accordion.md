@@ -43,10 +43,11 @@ See [Coupled Components with `provide`/`inject`](../patterns/coupled-components-
 
 Various libraries include an accordion component, or a component that can achieve a similar effect. These include:
 
-- Ant Design Vue - [Collapse](https://2x.antdv.com/components/collapse)
+- Vuetify - [Expansion Panel](https://next.vuetifyjs.com/en/components/expansion-panels/)
 - Element Plus - [Collapse](https://element-plus.org/en-US/component/collapse.html)
 - Quasar - [Expansion Item](https://quasar.dev/vue-components/expansion-item)
+- Ant Design Vue - [Collapse](https://www.antdv.com/components/collapse)
 - Headless UI - [Disclosure](https://headlessui.dev/vue/disclosure)
-- PrimeVue - [Accordion](https://primefaces.org/primevue/showcase/#/accordion)
+- PrimeVue - [Accordion](https://primefaces.org/primevue/accordion)
 - Naive UI - [Collapse](https://www.naiveui.com/en-US/os-theme/components/collapse)
 - Oruga - [Collapse](https://oruga.io/components/Collapse.html)
