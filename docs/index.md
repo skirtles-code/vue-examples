@@ -90,19 +90,25 @@ const tick = './images/tick.svg'
       <td><img :src="tick" alt="Tick">&nbsp;Yes</td>
     </tr>
     <tr>
+      <td>Vant<sup><a href="#component-libraries-notes">3</a></sup></td>
+      <td><a href="https://vant-ui.github.io/vant" target="_blank" rel="noopener noreferrer">docs</a></td>
+      <td><a href="https://www.npmjs.com/package/vant" target="_blank" rel="noopener noreferrer">npm</a> <img alt="npm weekly downloads" src="https://img.shields.io/npm/dm/vant?color=%235588cc&label="></td>
+      <td><img :src="tick" alt="Tick">&nbsp;Yes</td>
+    </tr>
+    <tr>
       <td>Naive UI</td>
       <td><a href="https://www.naiveui.com/" target="_blank" rel="noopener noreferrer">docs</a></td>
       <td><a href="https://www.npmjs.com/package/naive-ui" target="_blank" rel="noopener noreferrer">npm</a> <img alt="npm weekly downloads" src="https://img.shields.io/npm/dm/naive-ui?color=%235588cc&label="></td>
       <td><img :src="cross" alt="Cross">&nbsp;No</td>
     </tr>
     <tr>
-      <td>bootstrap-vue-3<sup><a href="#component-libraries-notes">3</a></sup></td>
-      <td><a href="https://cdmoro.github.io/bootstrap-vue-3/" target="_blank" rel="noopener noreferrer">docs</a></td>
-      <td><a href="https://www.npmjs.com/package/bootstrap-vue-3" target="_blank" rel="noopener noreferrer">npm</a> <img alt="npm weekly downloads" src="https://img.shields.io/npm/dm/bootstrap-vue-3?color=%235588cc&label="></td>
+      <td>bootstrap-vue-next<sup><a href="#component-libraries-notes">4</a></sup></td>
+      <td><a href="https://bootstrap-vue.github.io/bootstrap-vue-next/" target="_blank" rel="noopener noreferrer">docs</a></td>
+      <td><a href="https://www.npmjs.com/package/bootstrap-vue-next" target="_blank" rel="noopener noreferrer">npm</a> <img alt="npm weekly downloads" src="https://img.shields.io/npm/dm/bootstrap-vue-next?color=%235588cc&label="></td>
       <td><img :src="cross" alt="Cross">&nbsp;No</td>
     </tr>
     <tr>
-      <td>Oruga UI<sup><a href="#component-libraries-notes">4</a></sup></td>
+      <td>Oruga UI<sup><a href="#component-libraries-notes">5</a></sup></td>
       <td><a href="https://oruga.io/documentation/" target="_blank" rel="noopener noreferrer">docs</a></td>
       <td><a href="https://www.npmjs.com/package/@oruga-ui/oruga-next" target="_blank" rel="noopener noreferrer">npm</a> <img alt="npm weekly downloads" src="https://img.shields.io/npm/dm/@oruga-ui/oruga-next?color=%235588cc&label="></td>
       <td><a href="https://www.npmjs.com/package/@oruga-ui/oruga" target="_blank" rel="noopener noreferrer">npm</a> <img alt="npm weekly downloads" src="https://img.shields.io/npm/dm/@oruga-ui/oruga?color=%235588cc&label="></td>
@@ -110,13 +116,12 @@ const tick = './images/tick.svg'
   </tbody>
 </table>
 
-<!-- TODO: Investigate Vant: https://www.npmjs.com/package/vant -->
-
 <div id="component-libraries-notes"></div>
 
 Notes:
 
 1. Vuetify 3 is compatible with Vue 3. Vuetify 3.0.0 was released at the end of October 2022 and is still missing some important features relative to earlier versions.
 2. Headless UI isn't really comparable to the other libraries on the list, but it does attempt to solve similar problems and it is easily popular enough to warrant a mention.
-3. bootstrap-vue-3 is an independent rewrite of BootstrapVue: <a href="https://bootstrap-vue.org/" target="_blank" rel="noopener noreferrer">docs</a>, <a href="https://www.npmjs.com/package/bootstrap-vue" target="_blank" rel="noopener noreferrer">npm</a> <img alt="npm weekly downloads" src="https://img.shields.io/npm/dm/bootstrap-vue?color=%235588cc&label=">, which was a very popular Vue 2 component library. BootstrapVue recently announced work on Vue 3 compatibility, <https://bootstrap-vue.org/vue3>. Unfortunately, this will mean that the name 'BootstrapVue 3' is ambiguous and could refer to either library.    
-4. The Vue 2 library Buefy: <a href="https://buefy.org/" target="_blank" rel="noopener noreferrer">docs</a>, <a href="https://www.npmjs.com/package/buefy" target="_blank" rel="noopener noreferrer">npm</a> <img alt="npm weekly downloads" src="https://img.shields.io/npm/dm/buefy?color=%235588cc&label=">, combines Vue with Bulma. The lead maintainer of that project also maintains Oruga UI and recommends using Oruga as the successor to Buefy for Vue 3.
+3. Vant targets mobile browsers and isn't generally suitable for desktop applications.
+4. bootstrap-vue-next started out as bootstrap-vue-3, <a href="https://www.npmjs.com/package/bootstrap-vue-3" target="_blank" rel="noopener noreferrer">npm</a> <img alt="npm weekly downloads" src="https://img.shields.io/npm/dm/bootstrap-vue-3?color=%235588cc&label=">. It was an independent rewrite of BootstrapVue: <a href="https://bootstrap-vue.org/" target="_blank" rel="noopener noreferrer">docs</a>, <a href="https://www.npmjs.com/package/bootstrap-vue" target="_blank" rel="noopener noreferrer">npm</a> <img alt="npm weekly downloads" src="https://img.shields.io/npm/dm/bootstrap-vue?color=%235588cc&label=">, which was a very popular Vue 2 component library. In late 2022, BootstrapVue announced work on Vue 3 compatibility, <https://bootstrap-vue.org/vue3>. In early 2023, bootstrap-vue-3 was renamed to bootstrap-vue-next and migrated its GitHub repo to the bootstrap-vue organization.    
+5. The Vue 2 library Buefy: <a href="https://buefy.org/" target="_blank" rel="noopener noreferrer">docs</a>, <a href="https://www.npmjs.com/package/buefy" target="_blank" rel="noopener noreferrer">npm</a> <img alt="npm weekly downloads" src="https://img.shields.io/npm/dm/buefy?color=%235588cc&label=">, combines Vue with Bulma. The lead maintainer of that project also maintains Oruga UI and recommends using Oruga as the successor to Buefy for Vue 3.
