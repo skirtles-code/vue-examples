@@ -51,7 +51,7 @@ const tick = './images/tick.svg'
 <table>
   <thead>
     <tr><th>Name</th><th>docs</th><th>npm</th><th>Vue 2?</th></tr>
-  </thead>  
+  </thead>
   <tbody>
     <tr>
       <td>Vuetify<sup><a href="#component-libraries-notes">1</a></sup></td>
@@ -123,5 +123,5 @@ Notes:
 1. Vuetify 3 is compatible with Vue 3. Vuetify 3.0.0 was released at the end of October 2022 and is still missing some important features relative to earlier versions.
 2. Headless UI isn't really comparable to the other libraries on the list, but it does attempt to solve similar problems and it is easily popular enough to warrant a mention.
 3. Vant targets mobile browsers and isn't generally suitable for desktop applications.
-4. bootstrap-vue-next started out as bootstrap-vue-3, <a href="https://www.npmjs.com/package/bootstrap-vue-3" target="_blank" rel="noopener noreferrer">npm</a> <img alt="npm monthly downloads" src="https://img.shields.io/npm/dm/bootstrap-vue-3?color=%235588cc&label=">. It was an independent rewrite of BootstrapVue: <a href="https://bootstrap-vue.org/" target="_blank" rel="noopener noreferrer">docs</a>, <a href="https://www.npmjs.com/package/bootstrap-vue" target="_blank" rel="noopener noreferrer">npm</a> <img alt="npm monthly downloads" src="https://img.shields.io/npm/dm/bootstrap-vue?color=%235588cc&label=">, which was a very popular Vue 2 component library. In late 2022, BootstrapVue announced work on Vue 3 compatibility, <https://bootstrap-vue.org/vue3>. In early 2023, bootstrap-vue-3 was renamed to bootstrap-vue-next and migrated its GitHub repo to the bootstrap-vue organization.    
+4. bootstrap-vue-next started out as bootstrap-vue-3, <a href="https://www.npmjs.com/package/bootstrap-vue-3" target="_blank" rel="noopener noreferrer">npm</a> <img alt="npm monthly downloads" src="https://img.shields.io/npm/dm/bootstrap-vue-3?color=%235588cc&label=">. It was an independent rewrite of BootstrapVue: <a href="https://bootstrap-vue.org/" target="_blank" rel="noopener noreferrer">docs</a>, <a href="https://www.npmjs.com/package/bootstrap-vue" target="_blank" rel="noopener noreferrer">npm</a> <img alt="npm monthly downloads" src="https://img.shields.io/npm/dm/bootstrap-vue?color=%235588cc&label=">, which was a very popular Vue 2 component library. In late 2022, BootstrapVue announced work on Vue 3 compatibility, <https://bootstrap-vue.org/vue3>. In early 2023, bootstrap-vue-3 was renamed to bootstrap-vue-next and migrated its GitHub repo to the bootstrap-vue organization.
 5. The Vue 2 library Buefy: <a href="https://buefy.org/" target="_blank" rel="noopener noreferrer">docs</a>, <a href="https://www.npmjs.com/package/buefy" target="_blank" rel="noopener noreferrer">npm</a> <img alt="npm monthly downloads" src="https://img.shields.io/npm/dm/buefy?color=%235588cc&label=">, combines Vue with Bulma. The lead maintainer of that project also maintains Oruga UI and recommends using Oruga as the successor to Buefy for Vue 3.

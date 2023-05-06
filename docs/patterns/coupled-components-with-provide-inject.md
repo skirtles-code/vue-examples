@@ -36,7 +36,7 @@ While values can only be provided down the component tree, passing a function al
 // my-map.vue
 const register = () => {
   /* ... various logic ... */
-  
+
   return { map, unregister }
 }
 

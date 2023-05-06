@@ -26,5 +26,4 @@ const radioModel = computed({
     emit('update:modelValue', newChecked)
   }
 })
-
 </script>

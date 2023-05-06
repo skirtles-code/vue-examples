@@ -5,5 +5,3 @@ Vue 3 examples deployed at [https://skirtles-code.github.io/vue-examples](https:
 ## Suggestions
 
 If you have a suggestion for improving the site please [create an issue](https://github.com/skirtles-code/vue-examples/issues).
-
-

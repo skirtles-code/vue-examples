@@ -115,7 +115,7 @@ export const plugin = {
     app.provide(injectionKey, http)
 
     // It is common to use both `app.config.globalProperties`
-    // and `provide` in the same plugin 
+    // and `provide` in the same plugin
     app.config.globalProperties.$http = http
   }
 }
@@ -206,15 +206,15 @@ If you want the equivalent of `v-if`/`v-else` you can use two slots:
 ```html
 <permission-check name="admin">
   <template #allowed>
-    <admin-menu />  
+    <admin-menu />
   </template>
   <template #denied>
-    <user-menu />    
-  </template>  
+    <user-menu />
+  </template>
 </permission-check>
 ```
 
-The `permission-check` component would still need some way of accessing the 'global' data, and for that it would use one of the other techniques described on this page. The key thing about this approach is that only this one component would need to worry about how the global data is passed around, everything else would just use the component. If you need to refactor how the data is passed around it will only impact this one component. 
+The `permission-check` component would still need some way of accessing the 'global' data, and for that it would use one of the other techniques described on this page. The key thing about this approach is that only this one component would need to worry about how the global data is passed around, everything else would just use the component. If you need to refactor how the data is passed around it will only impact this one component.
 
 To give a concrete example of how `permission-check` might be implemented in conjunction with Vuex:
 
@@ -225,11 +225,11 @@ import { useStore } from 'vuex'
 // It doesn't render any VNodes of its own, just those created by its slots.
 const PermissionCheck = ({ name }, { slots }) => {
   const hasPermission = useStore().state.permissions[name]
-  
+
   if (hasPermission) {
     return slots.allowed?.() || slots.default?.()
   }
-  
+
   return slots.denied?.()
 }
 ```
