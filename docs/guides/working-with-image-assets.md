@@ -53,7 +53,7 @@ So if images need to be imported, why does `<img src="../assets/image.png">` wor
 
 That's a special case. The build tools look for `<img src>` and import that path automatically. They do the same with several other native HTML elements too, and can be configured to work with custom components. The specifics depend on what tools you're using:
 
-- Vite: [@vitejs/plugin-vue](https://github.com/vitejs/vite/tree/main/packages/plugin-vue#asset-url-handling)
+- Vite: [@vitejs/plugin-vue](https://github.com/vitejs/vite-plugin-vue/tree/main/packages/plugin-vue#asset-url-handling)
 - Vue CLI / webpack: [Vue Loader](https://vue-loader.vuejs.org/guide/asset-url.html)
 
 But that can only handle static paths, hard-coded directly into the template.
