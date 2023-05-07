@@ -61,6 +61,24 @@ module.exports = {
               link: '/advanced/understanding-the-vue-source-code.html'
             }
           ]
+        }, {
+          text: 'Exercises',
+          link: '/exercises/',
+          children: [
+            {
+              text: 'Tic-tac-toe',
+              link: '/exercises/tic-tac-toe.html'
+            }, {
+              text: 'Quiz',
+              link: '/exercises/quiz.html'
+            }, {
+              text: 'Minesweeper',
+              link: '/exercises/minesweeper.html'
+            }, {
+              text: 'Numbers Game',
+              link: '/exercises/numbers-game.html'
+            }
+          ]
         }
       ]
     }

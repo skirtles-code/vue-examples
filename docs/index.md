@@ -30,6 +30,10 @@ In pretty much all cases, the styling and accessibility of these components is n
 * [Working with Image Assets](./guides/working-with-image-assets.html)
 * [Understanding the Vue Source Code](./advanced/understanding-the-vue-source-code.html)
 
+## Exercises
+
+* [Practice projects](./exercises/) for newcomers to Vue.
+
 ## Component libraries
 
 These are some of the most widely used component libraries for **Vue 3**.
