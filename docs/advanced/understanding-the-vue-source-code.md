@@ -40,7 +40,7 @@ Stepping through the code in the debugger can be a really good way to study some
 
 ## Other Advice
 
-Tools like the [Template Explorer](https://template-explorer.vuejs.org/) and [SFC Playground](https://sfc.vuejs.org/) allow you to see how Vue's template compiler and SFC compiler transform application code. If you're specifically interested in learning more about those features then those tools can help you to understand what the compilers do, before you try to study how they do it.
+Tools like the [Template Explorer](https://template-explorer.vuejs.org/) and [SFC Playground](https://play.vuejs.org/) allow you to see how Vue's template compiler and SFC compiler transform application code. If you're specifically interested in learning more about those features then those tools can help you to understand what the compilers do, before you try to study how they do it.
 
 There are some really insightful videos of Evan speaking at conferences that might help to give a bit more background on the internals. I found this one useful, <https://www.youtube.com/watch?v=P_IsppdGPsw>, but there are plenty of others that touch on different things.
 
