@@ -9,7 +9,7 @@ This causes problems when working with `v-model`, which attempts to modify the v
 
 There are more complete examples for [Checkbox](../components/checkbox.html) and [Radio](../components/radio.html) components, but to reduce it down to the essentials with an `<input>`:
 
-```html
+```vue-html
 <input v-model="inputValue">
 ```
 

@@ -1,14 +1,17 @@
+---
+outline: 'deep'
+---
 # Working with Image Assets
 
 Let's imagine you have something like this in a Vue component template:
 
-```vue
+```vue-html
 <img src="../assets/image.png">
 ```
 
 It works fine. You then try to change it to something dynamic:
 
-```vue
+```vue-html
 <img :src="imgSrc">
 ```
 
@@ -16,7 +19,7 @@ It works fine. You then try to change it to something dynamic:
 
 Another way you might encounter the same problem is trying to pass the path to a component rather than an `<img>`. For example:
 
-```vue
+```vue-html
 <!-- Works -->
 <img src="../assets/image.png">
 
@@ -230,14 +233,14 @@ Using `/public` can be a good option if there are a lot of images that never cha
 
 Let's assume we put our images in `/public/images`. We won't be able to reference them with static strings in the template, because those will be automatically converted to imports:
 
-```vue
+```vue-html
 <!-- This will fail, files in /public can't be imported -->
 <img src="/images/image.png">
 ```
 
 To get around that, we can trick the tools by using `:src` instead of `src`:
 
-```vue
+```vue-html
 <!-- Using :src to bypass the automatic import -->
 <img :src="'/images/image.png'">
 ```

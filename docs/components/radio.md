@@ -1,5 +1,5 @@
 ---
-sidebarDepth: 4
+outline: 'deep'
 ---
 <script setup>
 import { ref } from 'vue'

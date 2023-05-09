@@ -1,6 +1,3 @@
----
-sidebarDepth: 4
----
 <script setup>
 import { ref } from 'vue'
 import BasicRadio from './radio-group/radio.vue'
@@ -37,13 +34,10 @@ const radioValue = ref('First')
 It would look something like this:
 
 <live-example>
-  <!-- template tag to keep VitePress from mangling everything -->
-  <template v-if="radioValue">
-    <basic-radio-group v-model="radioValue">
-      <basic-radio v-for="option in options" :value="option" />
-    </basic-radio-group>
-    <pre>Bound value: {{ radioValue }}</pre>
-  </template>
+  <basic-radio-group v-model="radioValue">
+    <basic-radio v-for="option in options" :value="option" />
+  </basic-radio-group>
+  <pre>Bound value: {{ radioValue }}</pre>
 </live-example>
 
 [SFC Playground](https://play.vuejs.org/#eNqVU8tOwzAQ/JVVLglS2tyjUIlKwAkJAeJCOJR4W4wa2zh2JFTl31nbaaI+aMslkdezs7MzySa6UWraWozyqGgqzZWBBo1Vs1LwWkltYAMal9DBUssaYoLGw9V80fDqacG47G+n2VhyrMeg91padQTv631TKSopGgPaXbwu1hbh2slI4juuGxNflaLIglwSSgeDtVovDNIJoPhwpBPfPFn5ce2klgzX12U0UpaRR+/ioXVXhPODygiyU6BnJJ3sHOrlk+sRVGQH8kJdaZzNpRUsNOawIetHA7quyBzErT6sG6XRruOncuTiCyuzF+XWaqWlashlhksu8NGdko3TtRUTFtT4bblGloPRZCHVulJ0lMdOZA/ObCILE5N4LJ6LjvF2ayUXyhowP8p56BnIw70gPSeV863X/t0nW2SB7S+/hi/ulGmVrEkGstQ51HJGQfzPP6/XR3i5iVhzM3Dd0qFJ3mKrGK2Qj3zxu2/pde24nA66g4gVGkiuxvnGahEkT0c+LyR1T3IBEm/l0OMkJUc0pOEDISX9FpcH3KylGX6Kw6i6X+0EmxM=)

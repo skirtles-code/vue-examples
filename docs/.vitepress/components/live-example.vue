@@ -19,13 +19,21 @@ fieldset {
   padding: 10px;
 }
 
-fieldset > ::v-deep(pre) {
+:deep(select), :deep(button), :deep(input) {
+  background: revert;
+  border: revert;
+  line-height: revert;
+  padding: revert;
+  -webkit-appearance: revert;
+}
+
+fieldset > :deep(pre) {
   background: #eee;
   border: 1px solid #ccc;
   padding: 2px;
 }
 
-fieldset > ::v-deep(pre::after) {
+fieldset > :deep(pre::after) {
   content: " ";
   visibility: hidden;
 }

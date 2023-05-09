@@ -1,5 +1,5 @@
 ---
-sidebarDepth: 4
+outline: 'deep'
 ---
 <script setup>
 import { ref } from 'vue'
@@ -62,7 +62,7 @@ As the first example is using an `<input>` element, it can also use `v-model` in
 
 It could also be implemented without using `v-model` on the `<input>`. Instead, we could use something like this:
 
-```html
+```vue-html
 <input
   type="checkbox"
   :checked="modelValue"

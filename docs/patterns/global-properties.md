@@ -47,7 +47,7 @@ app.config.globalProperties.$format = {
 }
 ```
 
-```html
+```vue-html
 <span>{{ $format.currencyUSD(item.unitPrice) }}</span>
 ```
 
@@ -55,7 +55,7 @@ This would be one way to replace *filters*, which no longer exist in Vue 3.
 
 Other use cases for `globalProperties` in templates might be viewport breakpoints or permissions checks:
 
-```html
+```vue-html
 <template v-if="$viewport.isNarrow">
   <admin-menu v-if="$permissions.has('admin')" />
   <user-menu v-else />
@@ -195,7 +195,7 @@ Earlier we saw how `globalProperties` could be used for exposing things like vie
 
 An alternative approach would be to implement these features using components. These would be *renderless components*, just rendering the contents of their slots if the relevant criteria are met. e.g.:
 
-```html
+```vue-html
 <permission-check name="admin">
   <admin-menu />
 </permission-check>
@@ -203,7 +203,7 @@ An alternative approach would be to implement these features using components. T
 
 If you want the equivalent of `v-if`/`v-else` you can use two slots:
 
-```html
+```vue-html
 <permission-check name="admin">
   <template #allowed>
     <admin-menu />

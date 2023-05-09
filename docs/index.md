@@ -44,7 +44,12 @@ The monthly downloads should not be trusted as a way to judge the quality of a l
 
 <style>
 img[src^="https://img.shields.io"] {
+  display: inline-block;
   vertical-align: middle;
+}
+
+td > img {
+  display: inline-block;
 }
 </style>
 <script setup>
