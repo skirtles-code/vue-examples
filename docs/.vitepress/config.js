@@ -1,6 +1,7 @@
 import { defineConfigWithTheme } from 'vitepress'
 
 export default defineConfigWithTheme({
+  outDir: '../dist',
   base: '/vue-examples',
   title: 'Vue Examples',
   lang: 'en-US',
