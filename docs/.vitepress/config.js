@@ -22,6 +22,9 @@ export default defineConfigWithTheme({
         text: 'Introduction',
         link: '/'
       }, {
+        text: 'Component Libraries',
+        link: '/component-libraries'
+      }, {
         text: 'Example Components',
         items: [
           {
