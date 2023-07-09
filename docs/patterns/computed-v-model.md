@@ -3,9 +3,9 @@ import ProxyExample from './computed-v-model/proxy-example.vue'
 </script>
 # Computed with v-model
 
-The principle of one-way data flow, with 'props down, events up', is just an extension of the idea that data should only be modified by its owner. This same idea can be extended to other scenarios, such as using Vuex, where the store is considered the owner of the data and so it should only be mutated by the store.
+The principle of one-way data flow, with 'props down, events up', is just an extension of the idea that data should only be modified by its owner. This same idea can be extended to other scenarios, such as using Pinia, where the store is considered the owner of the data and so it should only be mutated by the store.
 
-This causes problems when working with `v-model`, which attempts to modify the value directly. We can work around that using a `computed` value with a `get` and `set`.
+This causes problems when working with `v-model`, which attempts to modify the value directly. One way we can address this is by using `computed()` with `get` and `set`.
 
 There are more complete examples for [Checkbox](../components/checkbox.html) and [Radio](../components/radio.html) components, but to reduce it down to the essentials with an `<input>`:
 
@@ -26,25 +26,27 @@ const inputValue = computed({
 })
 ```
 
-So for Vuex we might do something like this:
+So for a prop passed down from the parent component we might do something like this:
 
 ```js
 const inputValue = computed({
-  get: () => store.state.value,
-  set: newValue => store.commit('updateValue', newValue)
-})
-```
-
-A similar idea is common when working with data passed down from a parent component:
-
-```js
-const inputValue = computed({
-  get: () => props.value,
-  set: newValue => emit('update:value', newValue)
+  get: () => props.title,
+  set: newValue => emit('update:title', newValue)
 })
 ```
 
 Using an event with a name of the form `update:propName` allows it to be used with `v-model` on the parent. The default prop name for this would be `modelValue`. As such, the technique described here is the standard way to 'pass on' a `v-model` from a component's parent to one of its children.
+
+A similar approach would work for updating data via a Pinia action:
+
+```js
+const store = useMyStore()
+
+const inputValue = computed({
+  get: () => store.title,
+  set: newValue => store.updateTitle(newValue)
+})
+```
 
 ## Libraries
 
@@ -88,7 +90,7 @@ Putting that all together gives:
   <proxy-example />
 </live-example>
 
-While it might look a bit fiddly if you aren't used to working with a `Proxy`, most of this code is very reusable and can be hidden away behind a utility function. We could create a similar utility function for performing the same bit of trickery with an object coming from a Vuex store.
+While it might look a bit fiddly if you aren't used to working with a `Proxy`, most of this code is very reusable and can be hidden away behind a utility function. We could create a similar utility function for performing the same bit of trickery with an object coming from a store.
 
 The approach does violate another best practice. The usual recommendation is to avoid mutating the properties of an object returned from a `computed`, as they're considered transient. However, we're breaking that rule knowingly here as mutating those properties is the whole point of the approach.
 

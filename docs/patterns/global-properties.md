@@ -24,7 +24,7 @@ app.config.globalProperties.$http = axios.create({ /* ... */ })
 
 This allows us to use `this.$http`, just like in Vue 2.
 
-You'll find this approach used in some official Vue libraries. For example, Vuex exposes `$store` and Vue Router exposes `$router` and `$route`. The mapping helpers provided by Vuex, e.g. `mapState`, all rely on using `this.$store` to access the correct store. These helpers wouldn't be possible using most of the other techniques described on this page.
+You'll find this approach used in some official Vue libraries. For example, Vue Router exposes `$router` and `$route`. The mapping helpers provided by Vuex, e.g. `mapState`, all rely on using `this.$store` to access the correct store. These helpers wouldn't be possible using most of the other techniques described on this page.
 
 However, the use of `globalProperties` in those official libraries shouldn't be seen as an endorsement to use them everywhere. Those libraries have some specific requirements that typically don't apply to application code.
 
@@ -70,7 +70,7 @@ But the lack of availability in `setup` is a major problem, so let's consider so
 
 ## Application-level `provide` / `inject`
 
-The standard solution for use with the Composition API is to use `provide` on the application and `inject` in `setup`. The latter will usually be wrapped in a dedicated helper function. We see this approach with Vuex and Vue Router, which have functions such as `useStore` and `useRouter` implemented this way.
+The standard solution for use with the Composition API is to use `provide` on the application and `inject` in `setup`. The latter will usually be wrapped in a dedicated helper function. We see this approach with Vue Router, which has functions such as `useRouter` and `useRoute` implemented this way.
 
 Returning to the earlier example for `axios`:
 
@@ -148,9 +148,9 @@ import http from './http.js'
 
 This flips the dependency. Rather than having a value injected from outside, the dependency is an explicit import from a specific location. The gain in explicitness comes with a small loss in the reusability of the component.
 
-ES modules also work well outside of Vue components. For the `axios` example, it's common to need the same `axios` instance in Vuex actions. While there are other ways that can be achieved, using an ES module is the most widely used in real applications.
+ES modules also work well outside of Vue components. For the `axios` example, it's common to need the same `axios` instance in Pinia actions. While there are other ways that can be achieved, using an ES module is the most widely used in real applications.
 
-## Sharing state using Pinia or Vuex
+## Sharing state using Pinia
 
 It can also be useful to share state globally. We could just use ES modules and Vue's Reactivity APIs to implement shared state ourselves:
 
@@ -160,15 +160,16 @@ export default reactive({})
 
 Then anything that needs this state object can use `import` to pull it in.
 
-However, this roll-your-own approach tends to lead to problems. Standard solutions, such as [Pinia](https://pinia.vuejs.org/) or [Vuex](https://vuex.vuejs.org/), provide several benefits:
+However, using [Pinia](https://pinia.vuejs.org/), the official Vue state management library, provides several benefits:
 
 - Documented APIs.
 - Familiarity among developers.
 - Standard usage patterns that, by design, avoid common problems.
 - Integration with Vue Devtools.
+- Third-party plugins.
 - You don't have to maintain the code yourself.
 
-So if you need a reactive, central store for your state, you should probably be using either Pinia or Vuex.
+So if you need a reactive, central store for your state, you should probably be using Pinia.
 
 ## Global mixins
 
@@ -216,15 +217,15 @@ If you want the equivalent of `v-if`/`v-else` you can use two slots:
 
 The `permission-check` component would still need some way of accessing the 'global' data, and for that it would use one of the other techniques described on this page. The key thing about this approach is that only this one component would need to worry about how the global data is passed around, everything else would just use the component. If you need to refactor how the data is passed around it will only impact this one component.
 
-To give a concrete example of how `permission-check` might be implemented in conjunction with Vuex:
+To give a concrete example of how `permission-check` might be implemented in conjunction with Pinia:
 
 ```js
-import { useStore } from 'vuex'
+import { useAuthStore } from '@/store/auth.js'
 
 // Using a functional component, so this is effectively just a render function.
 // It doesn't render any VNodes of its own, just those created by its slots.
 const PermissionCheck = ({ name }, { slots }) => {
-  const hasPermission = useStore().state.permissions[name]
+  const hasPermission = useAuthStore().permissions[name]
 
   if (hasPermission) {
     return slots.allowed?.() || slots.default?.()
