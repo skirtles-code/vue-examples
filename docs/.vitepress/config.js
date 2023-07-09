@@ -8,6 +8,10 @@ export default defineConfigWithTheme({
   appearance: false,
 
   themeConfig: {
+    search: {
+      provider: 'local'
+    },
+
     socialLinks: [
       { icon: 'github', link: 'https://github.com/skirtles-code/vue-examples' }
     ],
