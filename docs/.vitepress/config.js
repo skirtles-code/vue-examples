@@ -4,7 +4,7 @@ export default defineConfigWithTheme({
   base: '/vue-examples',
   title: 'Vue Examples',
   lang: 'en-US',
-  description: 'Examples of basic Vue components',
+  description: 'Examples of Vue patterns and basic components',
   appearance: false,
 
   themeConfig: {
