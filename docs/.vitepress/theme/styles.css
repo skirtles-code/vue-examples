@@ -1,0 +1,53 @@
+:root {
+  /* Switch the theme to green */
+  --vp-c-brand-1: var(--vp-c-green-1);
+  --vp-c-brand-2: var(--vp-c-green-2);
+  --vp-c-brand-3: var(--vp-c-green-3);
+  --vp-c-brand-soft: var(--vp-c-green-soft);
+
+  /* green-1 is too dark, so use green-2 instead */
+  --vp-home-hero-name-color: var(--vp-c-brand-2);
+
+  /* Revert inline code to the old theme, so it doesn't look like a link */
+  --vp-code-color: #476582;
+
+  /* Put borders on code and custom blocks */
+  --custom-code-block-border: var(--vp-c-divider);
+
+  --vp-custom-block-danger-border: hsla(358, 75%, 44%, 0.4);
+  --vp-custom-block-warning-border: hsla(32, 95%, 44%, 0.4);
+  --vp-custom-block-tip-border: hsla(153, 25%, 44%, 0.4);
+  --vp-custom-block-info-border: hsla(240, 10%, 64%, 0.4);
+}
+
+/* Borders on custom blocks in dark mode */
+html:not(.dark) {
+  --vp-custom-block-danger-bg: hsl(350, 81%, 96%);
+  --vp-custom-block-warning-bg: hsl(45, 93%, 94%);
+  --vp-custom-block-tip-bg: hsl(160, 81%, 98%);
+  --vp-custom-block-info-bg: hsl(240, 6%, 97%);
+}
+
+.dark {
+  /* Inline code for the dark theme */
+  --vp-code-color: #c9def1;
+}
+
+/* Apply a border to code blocks and code groups */
+.vp-doc div[class*='language-'] {
+  border: 1px solid var(--custom-code-block-border);
+}
+
+.vp-code-group > .tabs {
+  border: 1px solid var(--custom-code-block-border);
+  border-bottom: 0 none;
+}
+
+.vp-code-group > .blocks > div[class*='language-'] {
+  border-top: 0 none;
+}
+
+/* green-1 is much too close to black in the sidebar */
+html:not(.dark) .VPSidebar {
+  --vp-c-brand-1: var(--vp-c-brand-3);
+}
