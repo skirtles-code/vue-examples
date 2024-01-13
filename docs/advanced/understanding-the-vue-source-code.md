@@ -10,7 +10,13 @@ Vue is a large, open-source codebase. If you haven't studied anything similar th
 
 The code is changing all the time, so any attempt to document it in any detail will quickly become obsolete. That said, I'm going to try to outline some general advice that might help you to get beyond the first hurdle. Much of this advice would be transferable to other codebases too, but I've tried to tailor it to Vue specifically.
 
-There are lots of other ways to contribute to the project aside from writing code for Vue 3 itself. There are dozens of other official Vue repos for supporting libraries like Vue Router and Pinia, some of which are much smaller and easier to understand than Vue itself. They also tend to have a greater need for more maintainers. Helping out on [Discord](https://chat.vuejs.org/) is also a great way to contribute and learn, as you'll gain exposure to a wide range of use cases that you won't have seen in your own projects. See <https://vuejs.org/about/community-guide.html#what-you-can-do> for more ideas about how you might contribute.
+Before you jump in, it's worth considering whether you might be better off contributing in some other way:
+
+- Helping out on [Discord](https://chat.vuejs.org/) is a great way to contribute and learn, as you'll gain exposure to a wide range of use cases that you won't have seen in your own projects. It's one of the easiest ways to start getting involved and can help you to prepare for contributing in other ways.
+- The documentation can always be improved. If you're not comfortable writing in English then you could potentially help out with one of the translations.
+- There are dozens of other [official Vue repos](https://github.com/vuejs/), such as Vue Router, Pinia, VitePress, Vue Language Tools and Vue Devtools. Most of these are much smaller and easier to understand than Vue itself. They also tend to have a greater need for more maintainers.
+
+See <https://vuejs.org/about/community-guide.html#what-you-can-do> for more ideas about how you might contribute.
 
 Right, back to the Vue 3 core codebase...
 
