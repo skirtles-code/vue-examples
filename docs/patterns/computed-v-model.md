@@ -3,6 +3,10 @@ import ProxyExample from './computed-v-model/proxy-example.vue'
 </script>
 # Computed with v-model
 
+:::info
+This page has not yet been updated to cover the `defineModel` macro, which was added in Vue 3.4. The techniques described here should still work, but in some cases it might be better to use `defineModel` instead.
+:::
+
 The principle of one-way data flow, with 'props down, events up', is just an extension of the idea that data should only be modified by its owner. This same idea can be extended to other scenarios, such as using Pinia, where the store is considered the owner of the data and so it should only be mutated by the store.
 
 This causes problems when working with `v-model`, which attempts to modify the value directly. One way we can address this is by using `computed()` with `get` and `set`.

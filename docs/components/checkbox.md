@@ -10,6 +10,10 @@ const checkboxValue = ref(true)
 </script>
 # Checkbox
 
+:::info
+This page has not yet been updated to use the `defineModel` macro, which was added in Vue 3.4. The techniques described here should still work, but in some cases it might be better to use `defineModel` instead.
+:::
+
 ## Checkbox Examples
 
 We're going to look at two examples of a checkbox component. The first example wraps a native `<input>` element to create the checkbox. The second example uses CSS to give the impression of a checkbox without using an `<input>`.

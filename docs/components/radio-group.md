@@ -8,6 +8,10 @@ const options = ['First', 'Second', 'Third']
 </script>
 # Radio Group
 
+:::info
+This page has not yet been updated to use the `defineModel` macro, which was added in Vue 3.4. The techniques described here should still work, but in some cases it might be better to use `defineModel` instead.
+:::
+
 ## Radio Group Example
 
 A radio group component acts as a wrapper around multiple radio components, with a single `v-model` on the wrapper:

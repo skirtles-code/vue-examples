@@ -6,6 +6,10 @@ const switchValue = ref(true)
 </script>
 # Toggle Switch
 
+:::info
+This page has not yet been updated to use the `defineModel` macro, which was added in Vue 3.4. The techniques described here should still work, but in some cases it might be better to use `defineModel` instead.
+:::
+
 ## Toggle Switch Example
 
 Using a toggle switch should be very similar to using a checkbox:
