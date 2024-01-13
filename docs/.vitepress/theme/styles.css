@@ -47,6 +47,15 @@ html:not(.dark) {
   border-top: 0 none;
 }
 
+/* Inline code in a custom block looks too much like a link */
+.custom-block.info code, .custom-block.tip code {
+  color: var(--vp-code-color);
+}
+
+.custom-block.info a > code, .custom-block.tip a > code {
+  color: var(--vp-code-link-color);
+}
+
 /* green-1 is much too close to black in the sidebar */
 html:not(.dark) .VPSidebar {
   --vp-c-brand-1: var(--vp-c-brand-3);
