@@ -13,7 +13,13 @@ if (typeof window !== 'undefined') {
 </script>
 # Introduction
 
-> Thank you to those on the [Vue Land Discord](https://chat.vuejs.org/) and elsewhere who inspired these ideas.
+<div class="info custom-block">
+
+Thank you to those on the [Vue Land Discord](https://chat.vuejs.org/) and elsewhere who inspired these ideas.
+
+Recently I've been adding pages to the [Vue Land FAQ](https://vue-land.github.io/faq/) rather than putting them here, so if you want more content like this I suggest taking a look at that FAQ.
+
+</div>
 
 This collection of components and patterns is intended as a learning aid for those who are new to Vue.
 
