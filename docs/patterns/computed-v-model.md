@@ -11,7 +11,7 @@ The principle of one-way data flow, with 'props down, events up', is just an ext
 
 This causes problems when working with `v-model`, which attempts to modify the value directly. One way we can address this is by using `computed()` with `get` and `set`.
 
-There are more complete examples for [Checkbox](../components/checkbox.html) and [Radio](../components/radio.html) components, but to reduce it down to the essentials with an `<input>`:
+There are more complete examples for [Checkbox](../components/checkbox) and [Radio](../components/radio) components, but to reduce it down to the essentials with an `<input>`:
 
 ```vue-html
 <input v-model="inputValue">

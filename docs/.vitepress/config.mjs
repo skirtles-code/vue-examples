@@ -2,6 +2,7 @@ import { defineConfigWithTheme } from 'vitepress'
 
 export default defineConfigWithTheme({
   outDir: '../dist',
+  cleanUrls: true,
   base: '/vue-examples',
   title: 'Vue Examples',
   lang: 'en-US',
@@ -29,22 +30,22 @@ export default defineConfigWithTheme({
         items: [
           {
             text: 'Checkbox',
-            link: '/components/checkbox.html',
+            link: '/components/checkbox',
           }, {
             text: 'Radio',
-            link: '/components/radio.html',
+            link: '/components/radio',
           }, {
             text: 'Toggle Switch',
-            link: '/components/toggle-switch.html',
+            link: '/components/toggle-switch',
           }, {
             text: 'Radio Group',
-            link: '/components/radio-group.html'
+            link: '/components/radio-group'
           }, {
             text: 'Accordion',
-            link: '/components/accordion.html',
+            link: '/components/accordion',
           }, {
             text: 'Tabs',
-            link: '/components/tabs.html',
+            link: '/components/tabs',
           }
         ]
       }, {
@@ -52,13 +53,13 @@ export default defineConfigWithTheme({
         items: [
           {
             text: 'Computed with v-model',
-            link: '/patterns/computed-v-model.html'
+            link: '/patterns/computed-v-model'
           }, {
             text: 'Global Properties',
-            link: '/patterns/global-properties.html'
+            link: '/patterns/global-properties'
           }, {
             text: 'Coupled Components with provide/inject',
-            link: '/patterns/coupled-components-with-provide-inject.html'
+            link: '/patterns/coupled-components-with-provide-inject'
           }
         ]
       }, {
@@ -66,10 +67,10 @@ export default defineConfigWithTheme({
         items: [
           {
             text: 'Working with Image Assets',
-            link: '/guides/working-with-image-assets.html'
+            link: '/guides/working-with-image-assets'
           }, {
             text: 'Understanding the Vue Source Code',
-            link: '/advanced/understanding-the-vue-source-code.html'
+            link: '/advanced/understanding-the-vue-source-code'
           }
         ]
       }, {
@@ -78,16 +79,16 @@ export default defineConfigWithTheme({
         items: [
           {
             text: 'Tic-tac-toe',
-            link: '/exercises/tic-tac-toe.html'
+            link: '/exercises/tic-tac-toe'
           }, {
             text: 'Quiz',
-            link: '/exercises/quiz.html'
+            link: '/exercises/quiz'
           }, {
             text: 'Minesweeper',
-            link: '/exercises/minesweeper.html'
+            link: '/exercises/minesweeper'
           }, {
             text: 'Numbers Game',
-            link: '/exercises/numbers-game.html'
+            link: '/exercises/numbers-game'
           }
         ]
       }

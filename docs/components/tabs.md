@@ -31,7 +31,7 @@ The code for `tabs.vue` looks long, but a lot of it is CSS:
 
 ## Vue Patterns
 
-See [Coupled Components with `provide`/`inject`](../patterns/coupled-components-with-provide-inject.html)
+See [Coupled Components with `provide`/`inject`](../patterns/coupled-components-with-provide-inject)
 
 <!--
 ## Missing Functionality

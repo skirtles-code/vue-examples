@@ -7,10 +7,10 @@ import NumbersGame from './numbers-game.vue'
 
 # Exercises
 
-* [Tic-tac-toe](./tic-tac-toe.html)
-* [Quiz](./quiz.html)
-* [Minesweeper](./minesweeper.html)
-* [Numbers Game](./numbers-game.html)
+* [Tic-tac-toe](./tic-tac-toe)
+* [Quiz](./quiz)
+* [Minesweeper](./minesweeper)
+* [Numbers Game](./numbers-game)
 
 These exercises are intended for programmers new to Vue to practice their skills. You should read through the [official Vue documentation](https://vuejs.org/) first. Keep the documentation open while working on these exercises, as you'll likely need to look things up as you go.
 

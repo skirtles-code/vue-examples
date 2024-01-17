@@ -6,7 +6,7 @@ if (typeof window !== 'undefined') {
 
   if (['#component-libraries', '#component-libraries-notes'].includes(hash)) {
     onMounted(() => {
-      window.location = './component-libraries.html' + hash
+      window.location = './component-libraries' + hash
     })
   }
 }
@@ -31,23 +31,23 @@ In pretty much all cases, the styling and accessibility of these components is n
 
 ## Example components
 
-* [Checkbox](./components/checkbox.html)
-* [Radio](./components/radio.html)
-* [Toggle Switch](./components/toggle-switch.html)
-* [Radio Group](./components/radio-group.html)
-* [Accordion](./components/accordion.html)
-* [Tabs](./components/tabs.html)
+* [Checkbox](./components/checkbox)
+* [Radio](./components/radio)
+* [Toggle Switch](./components/toggle-switch)
+* [Radio Group](./components/radio-group)
+* [Accordion](./components/accordion)
+* [Tabs](./components/tabs)
 
 ## Patterns
 
-* [Computed with v-model](./patterns/computed-v-model.html)
-* [Global Properties](./patterns/global-properties.html)
-* [Coupled Components with `provide`/`inject`](./patterns/coupled-components-with-provide-inject.html)
+* [Computed with v-model](./patterns/computed-v-model)
+* [Global Properties](./patterns/global-properties)
+* [Coupled Components with `provide`/`inject`](./patterns/coupled-components-with-provide-inject)
 
 ## Guides
 
-* [Working with Image Assets](./guides/working-with-image-assets.html)
-* [Understanding the Vue Source Code](./advanced/understanding-the-vue-source-code.html)
+* [Working with Image Assets](./guides/working-with-image-assets)
+* [Understanding the Vue Source Code](./advanced/understanding-the-vue-source-code)
 
 ## Exercises
 

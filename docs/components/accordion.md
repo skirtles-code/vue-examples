@@ -31,7 +31,7 @@ The corresponding `accordion-panel.vue` is:
 
 ## Vue Patterns
 
-See [Coupled Components with `provide`/`inject`](../patterns/coupled-components-with-provide-inject.html).
+See [Coupled Components with `provide`/`inject`](../patterns/coupled-components-with-provide-inject).
 
 <!--
 ## Missing Functionality

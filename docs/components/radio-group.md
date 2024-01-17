@@ -54,11 +54,11 @@ The `radio.vue` here is specially written to use `inject` instead of a `modelVal
 
 <<< @/components/radio-group/radio.vue
 
-Support for direct use of `v-model` with the `radio` component has been omitted from this example. That technique is shown in the [Radio example](./radio.html). The two can be combined by using a default value with `inject` and then checking whether that value is set.
+Support for direct use of `v-model` with the `radio` component has been omitted from this example. That technique is shown in the [Radio example](./radio). The two can be combined by using a default value with `inject` and then checking whether that value is set.
 
 ## Vue Patterns
 
-See [Coupled Components with `provide`/`inject`](../patterns/coupled-components-with-provide-inject.html)
+See [Coupled Components with `provide`/`inject`](../patterns/coupled-components-with-provide-inject)
 
 Apart from the naming choices, there's nothing in this `radio-group.vue` implementation that assumes the children are radio buttons. It could be made to work with checkboxes, toggle switches or any similar components that involve picking from a list of options.
 
