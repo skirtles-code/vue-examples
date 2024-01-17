@@ -9,6 +9,16 @@ export default defineConfigWithTheme({
   description: 'Examples of Vue patterns and basic components',
   appearance: false,
 
+  transformHead({ page, siteData: { base } }) {
+    if (page !== '404.md') {
+      const canonicalUrl = `https://skirtles-code.github.io${base}${page}`
+        .replace(/index\.md$/, '')
+        .replace(/\.md$/, '')
+
+      return [['link', { rel: 'canonical', href: canonicalUrl }]]
+    }
+  },
+
   themeConfig: {
     search: {
       provider: 'local'
