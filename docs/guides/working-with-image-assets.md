@@ -29,7 +29,7 @@ Another way you might encounter the same problem is trying to pass the path to a
 
 ## Assets and Build Tools
 
-You'll encounter the same problem with both Vite and Vue CLI (webpack).
+You'll encounter the same problem with both Vite and the old Vue CLI (webpack).
 
 Both tools have a convention of putting assets such as images in the folder `/src/assets`, but there's no special handling for that folder in those tools. Assets need to be imported into your JS/TS code, just like other dependencies. If they aren't imported then they'll be discarded as part of the tree-shaking process and won't be included in the final build output.
 
@@ -49,6 +49,8 @@ import imgSrc from '../assets/image.png'
   <img :src="imgSrc" />
 </template>
 ```
+
+If you've configured a [`base`](https://vitejs.dev/guide/build.html#public-base-path) path (Vite) or a [`publicPath`](https://cli.vuejs.org/config/#publicpath) (Vue CLI) then that will also be automatically added to the imported path string.
 
 ## Why Does a Static `src` Work?
 
@@ -231,21 +233,63 @@ Both Vite and Vue CLI have support for a `/public` folder. This is a special fol
 
 Using `/public` can be a good option if there are a lot of images that never change, making the hashing unnecessary. However, it does come with its own problems.
 
-Let's assume we put our images in `/public/images`. We won't be able to reference them with static strings in the template, because those will be automatically converted to imports:
+In the examples that follow, let's assume we've put our images in `/public/images`.
+
+### `/public` with Vite
+
+If we're using Vite, the special handling for tags like `<img src>` carries across to files in `/public`. We can use static paths, we just need to start the path with a `/`:
 
 ```vue-html
-<!-- This will fail, files in /public can't be imported -->
+<!-- With Vite this will work fine -->
 <img src="/images/image.png">
 ```
 
-To get around that, we can trick the tools by using `:src` instead of `src`:
+Note that we **don't** include `/public` in the path.
 
-```vue-html
-<!-- Using :src to bypass the automatic import -->
-<img :src="'/images/image.png'">
+The Vite plugin has special handling for files beginning with `/`. It'll first check whether the file exists in the `/public` folder, then fall back to an import if the file wasn't found. If you've configured a [`base`](https://vitejs.dev/guide/build.html#public-base-path) path, Vite will rewrite the attribute path accordingly.
+
+If we're working with dynamic paths, or static paths on tags the plugin doesn't understand, then we have to apply the `base` path ourselves.
+
+For example, if we have `base: '/my-app/'` in our Vite config, we can access that path using `import.meta.env.BASE_URL`:
+
+```vue
+<script setup>
+// This gives us access to the `base` config option
+const base = import.meta.env.BASE_URL
+
+defineProps(['name'])
+</script>
+
+<template>
+  <img :src="`${base}images/${name}.png`" />
+</template>
 ```
 
-We also need to be careful if we're using a [base path (Vite)](https://vitejs.dev/guide/build.html#public-base-path) or [publicPath (Vue CLI / webpack)](https://cli.vuejs.org/config/#publicpath). Those won't be automatically prepended to the URL, so we need to do it ourselves.
+You can read more about the `/public` folder in [the Vite docs](https://vitejs.dev/guide/assets.html#the-public-directory).
 
-* Read more about the `/public` folder in [the Vite docs](https://vitejs.dev/guide/assets.html#the-public-directory).
-* Read more about the `/public` folder in [the Vue CLI docs](https://cli.vuejs.org/guide/html-and-static-assets.html#the-public-folder).
+### `/public` with Vue CLI
+
+To use the `/public` folder with Vue CLI, we need to apply the [publicPath](https://cli.vuejs.org/config/#publicpath) ourselves, even for static paths.
+
+For example, the following code will only work if `publicPath` is set to `/`:
+
+```vue-html
+<img src="/images/image.png">
+```
+
+Vue CLI won't rewrite this path at all, it'll just be left as-is.
+
+We can access the `publicPath` using `process.env.BASE_URL`:
+
+```vue
+<script setup>
+// This gives us access to the `publicPath` config option
+const base = process.env.BASE_URL
+</script>
+
+<template>
+  <img :src="`${base}images/image.png`" />
+</template>
+```
+
+You can read more about the `/public` folder in [the Vue CLI docs](https://cli.vuejs.org/guide/html-and-static-assets.html#the-public-folder).
