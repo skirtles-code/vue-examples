@@ -82,15 +82,15 @@ const tick = './images/tick.svg'
       <td><img :src="cross" alt="Cross">&nbsp;No</td>
     </tr>
     <tr>
-      <td>Vuestic UI</td>
-      <td><a href="https://ui.vuestic.dev/" target="_blank" rel="noopener noreferrer">docs</a></td>
-      <td><a href="https://www.npmjs.com/package/vuestic-ui" target="_blank" rel="noopener noreferrer">npm</a> <img alt="npm monthly downloads" src="https://img.shields.io/npm/dm/vuestic-ui?color=%235588cc&label="></td>
-      <td><img :src="cross" alt="Cross">&nbsp;No</td>
-    </tr>
-    <tr>
       <td>Flowbite Vue<sup><a href="#component-libraries-notes">4</a></sup></td>
       <td><a href="https://flowbite-vue.com/" target="_blank" rel="noopener noreferrer">docs</a></td>
       <td><a href="https://www.npmjs.com/package/flowbite-vue" target="_blank" rel="noopener noreferrer">npm</a> <img alt="npm monthly downloads" src="https://img.shields.io/npm/dm/flowbite-vue?color=%235588cc&label="></td>
+      <td><img :src="cross" alt="Cross">&nbsp;No</td>
+    </tr>
+    <tr>
+      <td>Vuestic UI</td>
+      <td><a href="https://ui.vuestic.dev/" target="_blank" rel="noopener noreferrer">docs</a></td>
+      <td><a href="https://www.npmjs.com/package/vuestic-ui" target="_blank" rel="noopener noreferrer">npm</a> <img alt="npm monthly downloads" src="https://img.shields.io/npm/dm/vuestic-ui?color=%235588cc&label="></td>
       <td><img :src="cross" alt="Cross">&nbsp;No</td>
     </tr>
     <tr>
@@ -165,9 +165,9 @@ Flowbite is conceptually similar to Bootstrap or Bulma, but built using Tailwind
       <td><a href="https://www.npmjs.com/package/bootstrap" target="_blank" rel="noopener noreferrer">npm</a> <img alt="npm monthly downloads" src="https://img.shields.io/npm/dm/bootstrap?color=%235588cc&label="></td>
     </tr>
     <tr>
-      <td>Bulma</td>
-      <td><a href="https://bulma.io/" target="_blank" rel="noopener noreferrer">docs</a></td>
-      <td><a href="https://www.npmjs.com/package/bulma" target="_blank" rel="noopener noreferrer">npm</a> <img alt="npm monthly downloads" src="https://img.shields.io/npm/dm/bulma?color=%235588cc&label="></td>
+      <td>Flowbite</td>
+      <td><a href="https://flowbite.com/" target="_blank" rel="noopener noreferrer">docs</a></td>
+      <td><a href="https://www.npmjs.com/package/flowbite" target="_blank" rel="noopener noreferrer">npm</a> <img alt="npm monthly downloads" src="https://img.shields.io/npm/dm/flowbite?color=%235588cc&label="></td>
     </tr>
     <tr>
       <td>daisyUI</td>
@@ -175,9 +175,9 @@ Flowbite is conceptually similar to Bootstrap or Bulma, but built using Tailwind
       <td><a href="https://www.npmjs.com/package/daisyui" target="_blank" rel="noopener noreferrer">npm</a> <img alt="npm monthly downloads" src="https://img.shields.io/npm/dm/daisyui?color=%235588cc&label="></td>
     </tr>
     <tr>
-      <td>Flowbite</td>
-      <td><a href="https://flowbite.com/" target="_blank" rel="noopener noreferrer">docs</a></td>
-      <td><a href="https://www.npmjs.com/package/flowbite" target="_blank" rel="noopener noreferrer">npm</a> <img alt="npm monthly downloads" src="https://img.shields.io/npm/dm/flowbite?color=%235588cc&label="></td>
+      <td>Bulma</td>
+      <td><a href="https://bulma.io/" target="_blank" rel="noopener noreferrer">docs</a></td>
+      <td><a href="https://www.npmjs.com/package/bulma" target="_blank" rel="noopener noreferrer">npm</a> <img alt="npm monthly downloads" src="https://img.shields.io/npm/dm/bulma?color=%235588cc&label="></td>
     </tr>
   </tbody>
 </table>
