@@ -64,7 +64,13 @@ const tick = './images/tick.svg'
       <td><img :src="tick" alt="Tick">&nbsp;Yes</td>
     </tr>
     <tr>
-      <td>Vant<sup><a href="#component-libraries-notes">2</a></sup></td>
+      <td>Nuxt UI<sup><a href="#component-libraries-notes">2</a></sup></td>
+      <td><a href="https://ui.nuxt.com/" target="_blank" rel="noopener noreferrer">docs</a></td>
+      <td><a href="https://www.npmjs.com/package/@nuxt/ui" target="_blank" rel="noopener noreferrer">npm</a> <img alt="npm monthly downloads" src="https://img.shields.io/npm/dm/@nuxt/ui?color=%235588cc&label="></td>
+      <td><img :src="cross" alt="Cross">&nbsp;No</td>
+    </tr>
+    <tr>
+      <td>Vant<sup><a href="#component-libraries-notes">3</a></sup></td>
       <td><a href="https://vant-ui.github.io/vant" target="_blank" rel="noopener noreferrer">docs</a></td>
       <td><a href="https://www.npmjs.com/package/vant" target="_blank" rel="noopener noreferrer">npm</a> <img alt="npm monthly downloads" src="https://img.shields.io/npm/dm/vant?color=%235588cc&label="></td>
       <td><img :src="tick" alt="Tick">&nbsp;Yes</td>
@@ -76,28 +82,28 @@ const tick = './images/tick.svg'
       <td><img :src="cross" alt="Cross">&nbsp;No</td>
     </tr>
     <tr>
-      <td>bootstrap-vue-next<sup><a href="#component-libraries-notes">3</a></sup></td>
+      <td>bootstrap-vue-next<sup><a href="#component-libraries-notes">4</a></sup></td>
       <td><a href="https://bootstrap-vue-next.github.io/bootstrap-vue-next/" target="_blank" rel="noopener noreferrer">docs</a></td>
       <td><a href="https://www.npmjs.com/package/bootstrap-vue-next" target="_blank" rel="noopener noreferrer">npm</a> <img alt="npm monthly downloads" src="https://img.shields.io/npm/dm/bootstrap-vue-next?color=%235588cc&label="></td>
       <td><img :src="cross" alt="Cross">&nbsp;No</td>
     </tr>
     <tr>
-      <td>Flowbite Vue<sup><a href="#component-libraries-notes">4</a></sup></td>
+      <td>Flowbite Vue<sup><a href="#component-libraries-notes">5</a></sup></td>
       <td><a href="https://flowbite-vue.com/" target="_blank" rel="noopener noreferrer">docs</a></td>
       <td><a href="https://www.npmjs.com/package/flowbite-vue" target="_blank" rel="noopener noreferrer">npm</a> <img alt="npm monthly downloads" src="https://img.shields.io/npm/dm/flowbite-vue?color=%235588cc&label="></td>
       <td><img :src="cross" alt="Cross">&nbsp;No</td>
+    </tr>
+    <tr>
+      <td>Oruga UI<sup><a href="#component-libraries-notes">6</a></sup></td>
+      <td><a href="https://oruga.io/documentation/" target="_blank" rel="noopener noreferrer">docs</a></td>
+      <td><a href="https://www.npmjs.com/package/@oruga-ui/oruga-next" target="_blank" rel="noopener noreferrer">npm</a> <img alt="npm monthly downloads" src="https://img.shields.io/npm/dm/@oruga-ui/oruga-next?color=%235588cc&label="></td>
+      <td><a href="https://www.npmjs.com/package/@oruga-ui/oruga" target="_blank" rel="noopener noreferrer">npm</a> <img alt="npm monthly downloads" src="https://img.shields.io/npm/dm/@oruga-ui/oruga?color=%235588cc&label="></td>
     </tr>
     <tr>
       <td>Vuestic UI</td>
       <td><a href="https://ui.vuestic.dev/" target="_blank" rel="noopener noreferrer">docs</a></td>
       <td><a href="https://www.npmjs.com/package/vuestic-ui" target="_blank" rel="noopener noreferrer">npm</a> <img alt="npm monthly downloads" src="https://img.shields.io/npm/dm/vuestic-ui?color=%235588cc&label="></td>
       <td><img :src="cross" alt="Cross">&nbsp;No</td>
-    </tr>
-    <tr>
-      <td>Oruga UI<sup><a href="#component-libraries-notes">5</a></sup></td>
-      <td><a href="https://oruga.io/documentation/" target="_blank" rel="noopener noreferrer">docs</a></td>
-      <td><a href="https://www.npmjs.com/package/@oruga-ui/oruga-next" target="_blank" rel="noopener noreferrer">npm</a> <img alt="npm monthly downloads" src="https://img.shields.io/npm/dm/@oruga-ui/oruga-next?color=%235588cc&label="></td>
-      <td><a href="https://www.npmjs.com/package/@oruga-ui/oruga" target="_blank" rel="noopener noreferrer">npm</a> <img alt="npm monthly downloads" src="https://img.shields.io/npm/dm/@oruga-ui/oruga?color=%235588cc&label="></td>
     </tr>
   </tbody>
 </table>
@@ -107,10 +113,11 @@ const tick = './images/tick.svg'
 **Notes:**
 
 1. Vuetify 3 is compatible with Vue 3. Vuetify 3.0.0 was released at the end of October 2022 and is still missing some important features relative to earlier versions.
-2. Vant targets mobile browsers and isn't generally suitable for desktop applications.
-3. bootstrap-vue-next started out as bootstrap-vue-3, <a href="https://www.npmjs.com/package/bootstrap-vue-3" target="_blank" rel="noopener noreferrer">npm</a> <img alt="npm monthly downloads" src="https://img.shields.io/npm/dm/bootstrap-vue-3?color=%235588cc&label=">. It was an independent rewrite of BootstrapVue: <a href="https://bootstrap-vue.org/" target="_blank" rel="noopener noreferrer">docs</a>, <a href="https://www.npmjs.com/package/bootstrap-vue" target="_blank" rel="noopener noreferrer">npm</a> <img alt="npm monthly downloads" src="https://img.shields.io/npm/dm/bootstrap-vue?color=%235588cc&label=">, which was a very popular Vue 2 component library. In late 2022, BootstrapVue announced work on Vue 3 compatibility, <https://bootstrap-vue.org/vue3>. In early 2023, bootstrap-vue-3 was renamed to bootstrap-vue-next.
-4. Flowbite Vue provides Vue components built using Flowbite. Flowbite itself is conceptually similar to Bootstrap or Buefy and is framework-agnostic.
-5. The Vue 2 library Buefy: <a href="https://buefy.org/" target="_blank" rel="noopener noreferrer">docs</a>, <a href="https://www.npmjs.com/package/buefy" target="_blank" rel="noopener noreferrer">npm</a> <img alt="npm monthly downloads" src="https://img.shields.io/npm/dm/buefy?color=%235588cc&label=">, combines Vue with Bulma. The lead maintainer of that project also maintains Oruga UI and recommends using Oruga as the successor to Buefy for Vue 3.
+2. Nuxt UI can be used without Nuxt.
+3. Vant targets mobile browsers and isn't generally suitable for desktop applications.
+4. bootstrap-vue-next started out as bootstrap-vue-3, <a href="https://www.npmjs.com/package/bootstrap-vue-3" target="_blank" rel="noopener noreferrer">npm</a> <img alt="npm monthly downloads" src="https://img.shields.io/npm/dm/bootstrap-vue-3?color=%235588cc&label=">. It was an independent rewrite of BootstrapVue: <a href="https://bootstrap-vue.org/" target="_blank" rel="noopener noreferrer">docs</a>, <a href="https://www.npmjs.com/package/bootstrap-vue" target="_blank" rel="noopener noreferrer">npm</a> <img alt="npm monthly downloads" src="https://img.shields.io/npm/dm/bootstrap-vue?color=%235588cc&label=">, which was a very popular Vue 2 component library. In late 2022, BootstrapVue announced work on Vue 3 compatibility, <https://bootstrap-vue.org/vue3>. In early 2023, bootstrap-vue-3 was renamed to bootstrap-vue-next.
+5. Flowbite Vue provides Vue components built using Flowbite. Flowbite itself is conceptually similar to Bootstrap or Buefy and is framework-agnostic.
+6. The Vue 2 library Buefy: <a href="https://buefy.org/" target="_blank" rel="noopener noreferrer">docs</a>, <a href="https://www.npmjs.com/package/buefy" target="_blank" rel="noopener noreferrer">npm</a> <img alt="npm monthly downloads" src="https://img.shields.io/npm/dm/buefy?color=%235588cc&label=">, combines Vue with Bulma. The lead maintainer of that project also maintains Oruga UI and recommends using Oruga as the successor to Buefy for Vue 3.
 
 ## Unstyled Vue components
 
@@ -128,18 +135,22 @@ These libraries provide Vue components without styling. They can be used to buil
       <td><img :src="cross" alt="Cross">&nbsp;No</td>
     </tr>
     <tr>
-      <td>Radix Vue</td>
-      <td><a href="https://www.radix-vue.com/" target="_blank" rel="noopener noreferrer">docs</a></td>
-      <td><a href="https://www.npmjs.com/package/radix-vue" target="_blank" rel="noopener noreferrer">npm</a> <img alt="npm monthly downloads" src="https://img.shields.io/npm/dm/radix-vue?color=%235588cc&label="></td>
+      <td>Reka UI</td>
+      <td><a href="https://reka-ui.com/" target="_blank" rel="noopener noreferrer">docs</a></td>
+      <td><a href="https://www.npmjs.com/package/reka-ui" target="_blank" rel="noopener noreferrer">npm</a> <img alt="npm monthly downloads" src="https://img.shields.io/npm/dm/reka-ui?color=%235588cc&label="></td>
       <td><img :src="cross" alt="Cross">&nbsp;No</td>
     </tr>
   </tbody>
 </table>
 
+Prior to version 2, Reka UI was known as Radix Vue: <a href="https://www.radix-vue.com/" target="_blank" rel="noopener noreferrer">docs</a>, <a href="https://www.npmjs.com/package/radix-vue" target="_blank" rel="noopener noreferrer">npm</a> <img alt="npm monthly downloads" src="https://img.shields.io/npm/dm/radix-vue?color=%235588cc&label=">.
+
 There are also collections of example Vue components that use these two libraries:
 
 * [Tailwind UI](https://tailwindui.com/) - Headless UI and Tailwind CSS.
-* [shadcn-vue](https://www.shadcn-vue.com/) - Radix Vue.
+* [shadcn-vue](https://www.shadcn-vue.com/) - Reka UI.
+
+Nuxt UI is also built on Reka UI.
 
 ## CSS frameworks
 
